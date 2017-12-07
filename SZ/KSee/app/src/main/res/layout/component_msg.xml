@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/common_padding"
+    android:paddingRight="@dimen/common_padding">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icon_msg_favourite" />
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="content"
+        android:textColor="#55626E"
+        android:textSize="@dimen/common_font_size_medium" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/msg_count"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_msg_tag"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="99+"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="@dimen/commmon_font_size_small" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_arrow_right_gray" />
+    </LinearLayout>
+
+</LinearLayout>

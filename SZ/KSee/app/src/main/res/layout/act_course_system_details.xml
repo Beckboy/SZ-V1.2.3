@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        app:background="@color/white"
+        app:center_title_text_style="@style/text_36_c_gray_242e42"
+        app:left_second_text="返回"
+        app:left_first_image="@drawable/icon_live_back"
+        app:left_first_visibility="visible"
+        app:right_img_one="@drawable/icon_live_share"
+        app:right_visibility="visible"
+        app:title_style="normal_img" />
+
+
+    <com.junhsue.ksee.view.WebPageView
+        android:id="@+id/course_system_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c_yellow_cdac8d"
+        android:gravity="center"
+        android:text="立即申请"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_font_size_medium" />
+
+</LinearLayout>

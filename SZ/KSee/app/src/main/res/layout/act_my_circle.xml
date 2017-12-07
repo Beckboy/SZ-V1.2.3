@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_commuity_background"
+    android:orientation="vertical">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_my_circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/page_commuity_background"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@color/page_commuity_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_my_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:background="@color/white"
+                    android:layout_marginBottom="@dimen/dimen_30px"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rl_circle_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp"
+                    android:paddingTop="15dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="73dp"
+                            android:src="@drawable/icon_my_favouite_circle_empty" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/msg_circle_favourite"
+                            android:textColor="@color/c_gray_95a3b1"
+                            android:textSize="@dimen/commmon_font_size_small" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|center"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="2dp"
+                            android:src="@drawable/icon_recommend_line_left" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="推荐圈子"
+                            android:textColor="@color/c_gray_242E42"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="2dp"
+                            android:src="@drawable/icon_command_circle_line_right" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_batch_change"
+                        android:layout_width="@dimen/dimen_104px"
+                        android:layout_height="@dimen/dimen_50px"
+                        android:padding="@dimen/dimen_20px"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/btn_batch_change"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp" />
+
+                </RelativeLayout>
+
+
+                <com.junhsue.ksee.view.CommonListView
+                    android:id="@+id/lv_my_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@null" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+
+ packageName com.junhsue.ksee
+  
+ alis android
+
+
+ 签名 EBF99CDC179B9D704A2AD905E3EFC4D7
+
+
+ 密码:junhsue200000
+
+
+证书指纹:
+	 MD5: EB:F9:9C:DC:17:9B:9D:70:4A:2A:D9:05:E3:EF:C4:D7
+	 SHA1: 40:9E:33:A3:B7:35:8A:C0:68:29:C4:21:1E:16:2F:4A:3B:9D:47:CB
+	 SHA256: B3:8C:52:BA:A5:28:61:EA:B7:85:93:61:2C:C3:C5:A3:28:4F:B5:FC:A1:7D:44:98:50:BE:50:8C:AE:51:43:15
+	 签名算法名称: SHA256withRSA
+	 版本: 3
+
+查看签名信息
+
+keytool -list -keystore  /Users/longer/Desktop/work/project-space/fm820/keystore/fm820.keystore -v

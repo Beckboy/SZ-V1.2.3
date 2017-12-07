@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30px"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡片问题的标题"
+        android:lines="1"
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="0.9"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="30px"
+        android:ellipsize="end"
+        android:textSize="@dimen/f_26"
+        android:textColor="@color/c_gray_8392a0"
+        />
+
+    <TextView
+        android:id="@+id/tv_card_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="0.9"
+        android:lineSpacingExtra="15px"
+        android:textSize="@dimen/f_30"
+        android:textColor="@color/c_black_3c4350"
+        />
+
+</LinearLayout>

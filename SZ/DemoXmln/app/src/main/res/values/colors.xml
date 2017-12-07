@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+   颜色命名(#ff0099命名为:c_基色_f09; #e2e2e2命名为:c_基色_e2; #ffffff命名为:c_基色_fff,
+   其它名全名:c_基色_全名[如:#FF4081 命名为c_red_FF4081])
+   -->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="gray">#ff454545</color>
+    <color name="red">#ffff0000</color>
+    <color name="pink">#ff599d</color>
+    <color name="blue">#ff2b57aa</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--所有页面的底色 -->
+    <color name="page_base_background">#F5F5F5</color>
+    <color name="actionbar_base_background">#2C3239</color>
+    <color name="transent">#00000000</color>
+
+
+    <color name="c_yellow_cdac8d">#CDAC8D</color>
+    <color name="c_gray_e5">#E5E5E5</color>
+    <color name="c_gray_e2d7cc">#E2D7CC</color>
+    <color name="c_gray_b2">#b2b2b2</color>
+    <color name="c_gray_9da1a7">#9DA1A7</color>
+    <color name="c_gray_999">#999999</color>
+
+    <!-- 通用的灰色字体颜色-->
+    <color name="c_gray_8392a0">#8392A0</color>
+    <!-- 通用的字体黑色字体颜色-->
+    <color name="c_black_3c4350">#3C4350</color>
+    <color name="c_gray_3d4044">#3D4044</color>
+    <color name="c_black_242a34">#242A34</color>
+    <color name="c_gray_919499">#919499</color>
+    <color name="c_green_59b197">#59B197</color>
+    <color name="c_gray_c7cdd5">#C7CDD5</color>
+
+    <!-- 登录注册页面颜色 -->
+    <color name="c_flow_item_normal">#F9F9F9</color>
+    <color name="c_flow_item_selector">#CDAC8D</color>
+    <!-- 日历颜色 -->
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+
+    <!--透明度颜色-->
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_home_live_foreshow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/common_padding">
+
+        <RelativeLayout
+            android:id="@+id/ll_live_foreshow_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="112dp"
+                android:layout_height="32dp"
+                android:background="@drawable/bg_home_tag"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/icon_home_live_tag" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="独家直播"
+                    android:textColor="@color/c_black_4C3A30"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_content_live_more"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_64px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:text="更多 >"
+                android:textColor="@color/c_gray_95a3b1"
+                android:textSize="@dimen/f_28" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_content_live"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_live_foreshow_status"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_solid_wihte_bottom_concer_20px"
+            android:paddingBottom="@dimen/dimen_20px">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_content_live_free_tag"
+                android:text="免费直播"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_font_size_normal"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_live_foreshow"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/img_default_course_suject"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_live_foreshow"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="@dimen/common_padding"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <!--
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_marginLeft="@dimen/common_padding"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/icon_live_foreshow_tag" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_live_foreshow_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/dimen_10px"
+                        android:maxLines="2"
+                        android:textColor="@color/c_black_54617a"
+                        android:textSize="@dimen/common_font_size_x" />
+
+                    <ImageView
+                        android:id="@+id/iv_home_foreshow_tag"
+                        android:layout_width="@dimen/dimen_80px"
+                        android:layout_height="@dimen/dimen_50px"
+                        android:background="@drawable/icon_home_foreshow_tag" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/txt_live_content_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="时间"
+                        android:textColor="@color/c_gray_95a3b1"
+                        android:textSize="@dimen/common_font_size_normal" />
+
+
+                    <TextView
+                        android:id="@+id/txt_live_content_speaker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="主讲人"
+                        android:textColor="@color/c_gray_95a3b1"
+                        android:textSize="@dimen/common_font_size_normal" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

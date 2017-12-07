@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_article_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="17dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="17dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:adjustViewBounds="true"
+                junhsue:riv_corner_radius="@dimen/dimen_20px"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_toRightOf="@+id/img"
+                android:ellipsize="end"
+                android:lineSpacingExtra="7dp"
+                android:lines="2"
+                android:maxLines="2"
+                android:textColor="@color/c_black_54617a"
+                android:textSize="@dimen/f_34" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/txt_title"
+                android:layout_below="@id/txt_title"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_publish_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/c_gray_95a3b1"
+                    android:textSize="@dimen/f_24" />
+
+                <TextView
+                    android:id="@+id/txt_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/c_gray_95a3b1"
+                    android:textSize="@dimen/f_24" />
+
+                <TextView
+                    android:id="@+id/txt_read_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/c_gray_95a3b1"
+                    android:textSize="@dimen/f_24" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

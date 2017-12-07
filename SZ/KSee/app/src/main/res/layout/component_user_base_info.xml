@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_30px"
+        android:paddingRight="@dimen/dimen_30px">
+
+        <com.junhsue.ksee.view.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="@dimen/dimen_96px"
+            android:layout_height="@dimen/dimen_96px"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dimen_16px"
+            android:layout_marginTop="@dimen/dimen_16px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_16px"
+            android:layout_toRightOf="@+id/civ_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                style="@style/text_f_30_c_3c4350"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--机构-->
+            <TextView
+                android:id="@+id/tv_from_d"
+                style="@style/text_f_24_c_919499"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4px" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

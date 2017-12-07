@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_base_background"
+    android:orientation="vertical">
+
+    <com.junhsue.ksee.view.ActionBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        app:background="@color/white"
+        app:center_title_text_style="@style/text_36_c_gray_242e42"
+        app:left_second_text="返回"
+        app:title="确认订单"
+        app:title_style="normal_img"
+        app:left_first_image="@drawable/icon_live_back"
+        app:left_first_visibility="visible"
+        app:right_img_one="@drawable/icon_live_share"
+        app:right_visibility="visible"
+        />
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

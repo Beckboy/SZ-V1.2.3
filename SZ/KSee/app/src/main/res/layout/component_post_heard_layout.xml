@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/v_post_scrollview_head_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30px"
+        android:background="@color/page_commuity_background" />
+
+    <RelativeLayout
+        android:id="@+id/rl_post_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_post_scrollview_head_divider"
+        android:layout_marginLeft="@dimen/dimen_40px"
+        android:layout_marginRight="@dimen/dimen_40px"
+        android:layout_marginTop="@dimen/dimen_38px">
+
+        <TextView
+            android:id="@+id/tv_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/dimen_10px"
+            android:textColor="@color/c_black_55626e"
+            android:textSize="@dimen/f_46" />
+
+        <ImageView
+            android:id="@+id/iv_post_detail_select_tag"
+            android:layout_width="@dimen/dimen_50px"
+            android:layout_height="@dimen/dimen_50px"
+            android:layout_marginTop="@dimen/dimen_4px"
+            android:background="@drawable/icon_home_post_selection"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_post_user_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_post_title_layout"
+        android:layout_marginTop="@dimen/dimen_42px"
+        android:paddingLeft="@dimen/dimen_40px"
+        android:paddingRight="@dimen/dimen_40px">
+
+        <com.junhsue.ksee.view.CircleImageView
+            android:id="@+id/civ_post_user_avatar"
+            android:layout_width="@dimen/dimen_80px"
+            android:layout_height="@dimen/dimen_80px"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_30px"
+            android:layout_toRightOf="@+id/civ_post_user_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_post_user_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_black_55626e"
+                android:textSize="@dimen/f_28" />
+            <!--机构-->
+            <TextView
+                android:id="@+id/tv_post_publish_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4px"
+                android:textColor="@color/c_gray_aebdcd"
+                android:textSize="@dimen/f_24" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_post_user_info_layout"
+        android:layout_marginLeft="@dimen/dimen_40px"
+        android:layout_marginRight="@dimen/dimen_40px"
+        android:layout_marginTop="@dimen/dimen_42px"
+        android:lineSpacingExtra="@dimen/dimen_10px"
+        android:paddingBottom="@dimen/dimen_20px"
+        android:textColor="@color/c_black_55626e"
+        android:textSize="@dimen/f_34" />
+
+    <com.junhsue.ksee.view.MultiImageView
+        android:id="@+id/mliv_post_multiImagView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_post_description"
+        android:layout_marginBottom="@dimen/dimen_30px"
+        android:layout_marginLeft="@dimen/dimen_40px"
+        android:layout_marginRight="@dimen/dimen_40px"></com.junhsue.ksee.view.MultiImageView>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="myTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/transent</item>
+        <item name="colorPrimaryDark">@color/actionbar_base_background</item>
+        <item name="colorAccent">@color/transent</item>
+    </style>
+
+    <style name="splashTheme" parent="myTheme">
+        <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>

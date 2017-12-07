@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_msg_card"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="@dimen/common_padding">
+
+
+    <include layout="@layout/item_msg_tag" />
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_60px"
+        android:layout_marginRight="@dimen/dimen_70px"
+        android:layout_marginTop="@dimen/dimen_20px"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/msg_question_title"
+        android:textColor="@color/c_black_3c4350"
+        android:textSize="@dimen/common_font_size_x" />
+
+    <TextView
+        android:id="@+id/txt_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title"
+        android:layout_marginLeft="@dimen/dimen_60px"
+        android:layout_marginRight="@dimen/dimen_70px"
+        android:layout_marginTop="@dimen/dimen_15px"
+        android:lineSpacingMultiplier="1.2"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="内容"
+        android:textSize="@dimen/font_size_15sp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_60px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_40px"
+        android:background="@drawable/bg_msg_btn"
+        android:focusable="false"
+        android:text="带朕去看"
+        android:textColor="@color/c_yellow_cdac8d"
+        android:textSize="@dimen/common_font_size_normal" />
+
+</LinearLayout>

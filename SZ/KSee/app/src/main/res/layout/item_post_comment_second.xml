@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_post_second_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_comment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_80px"
+            android:layout_marginTop="@dimen/dimen_20px">
+
+            <com.junhsue.ksee.view.CircleImageView
+                android:id="@+id/civ_post_comment_user_avatar"
+                android:layout_width="@dimen/dimen_60px"
+                android:layout_height="@dimen/dimen_60px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_50px" />
+
+            <TextView
+                android:id="@+id/tv_post_comment_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_30px"
+                android:layout_toRightOf="@+id/civ_post_comment_user_avatar" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_comment_layout"
+            android:layout_marginBottom="@dimen/dimen_30px"
+            android:layout_marginLeft="@dimen/dimen_140px"
+            android:layout_marginRight="@dimen/dimen_40px"
+            android:layout_marginTop="@dimen/dimen_22px"
+            android:lineSpacingExtra="@dimen/dimen_6px"
+            android:textColor="@color/c_black_55626e" />
+
+        <View
+            android:id="@+id/v_second_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginLeft="@dimen/dimen_40px"
+            android:layout_marginRight="@dimen/dimen_40px"
+            android:background="@color/c_gray_d6e3f0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_post_second_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_post_second_content_layout"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_30px"
+            android:layout_marginTop="@dimen/dimen_30px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_40px"
+                android:layout_marginRight="@dimen/dimen_30px"
+                android:layout_toLeftOf="@+id/tv_hint"
+                android:background="#D6E3F0" />
+
+            <TextView
+                android:id="@+id/tv_hint"
+                style="@style/text_f_28_aebdcd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="没有更多评论啦~" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_30px"
+                android:layout_marginRight="@dimen/dimen_40px"
+                android:layout_toRightOf="@+id/tv_hint"
+                android:background="#D6E3F0" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

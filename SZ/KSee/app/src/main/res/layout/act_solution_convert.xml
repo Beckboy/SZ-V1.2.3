@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F87A1"
+    android:orientation="vertical">
+
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/action_bar_solution"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/white"
+        app:background="@color/white"
+        app:left_first_image="@drawable/icon_live_back"
+        app:left_first_visibility="visible"
+        app:right_visibility="visible"
+        app:title="方案包兑换"
+        app:title_style="normal_img" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding"
+                android:layout_marginTop="30dp"
+                android:text="@string/solution_email_txt_input"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_15sp" />
+
+
+            <EditText
+                android:id="@+id/txt_send_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/common_padding"
+                android:layout_marginRight="@dimen/common_padding"
+                android:layout_marginTop="@dimen/common_padding"
+                android:background="@drawable/bg_txt_solution_email"
+                android:hint="格式:123456@xx.xxx"
+                android:paddingLeft="@dimen/dimen_40px"
+                android:textColor="#95A3B1"
+                android:textColorHint="#95A3B1"
+                android:textSize="@dimen/font_size_15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_padding"
+                android:layout_marginTop="30dp"
+                android:text="@string/solution_email_txt_select"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_15sp" />
+
+
+            <com.junhsue.ksee.view.CommonListView
+                android:id="@+id/list_view_solution"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/common_padding"
+                android:divider="@null"
+                android:cacheColorHint="@color/transent"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/txt_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_100px"
+                android:visibility="gone"
+                android:text="@string/msg_coupon_empty"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100px"
+        android:background="#FFC84A"
+        android:clickable="false"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

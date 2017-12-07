@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_coin_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_220px"
+        android:background="@drawable/bg_me_solution_convert"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="440"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dimen_20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="85px"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_36"
+                android:textColor="@color/c_black_55626e"
+                android:lines="1"
+                android:ellipsize="end"
+                />
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_24"
+                android:textColor="@color/c_gray_95a3b1"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="4px"
+                android:layout_marginBottom="6px"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_24"
+                android:textColor="#FC613C"
+                android:lines="1"
+                android:ellipsize="end"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="186"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/tv_coin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/f_44"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

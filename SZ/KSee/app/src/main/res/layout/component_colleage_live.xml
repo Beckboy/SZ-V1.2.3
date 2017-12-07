@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_colleage_live_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_40px"
+        android:paddingBottom="@dimen/dimen_40px"
+        android:paddingLeft="@dimen/dimen_30px"
+        android:paddingRight="@dimen/dimen_12px"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="独家直播"
+            android:lineSpacingExtra="12px"
+            android:lineSpacingMultiplier="0.9"
+            android:textColor="@color/c_black_3c4350"
+            android:textSize="@dimen/f_36"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:gravity="center_vertical"
+            android:textColor="#B6B8BB"
+            android:textSize="@dimen/f_30"
+            android:drawableRight="@drawable/icon_in_normal"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <com.junhsue.ksee.view.CommonListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null" />
+
+    <LinearLayout
+        android:id="@+id/ll_colleage_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/white"
+        />
+
+    <View
+        android:id="@+id/v_live_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30px"
+        android:background="@color/page_base_background"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_colleage_video_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_40px"
+        android:paddingBottom="@dimen/dimen_40px"
+        android:paddingLeft="@dimen/dimen_30px"
+        android:paddingRight="@dimen/dimen_12px"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精选视频"
+            android:lineSpacingExtra="12px"
+            android:lineSpacingMultiplier="0.9"
+            android:textColor="@color/c_black_3c4350"
+            android:textSize="@dimen/f_36"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:gravity="center_vertical"
+            android:textColor="#B6B8BB"
+            android:textSize="@dimen/f_30"
+            android:drawableRight="@drawable/icon_in_normal"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/ll_colleage_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_10px"
+            android:paddingRight="@dimen/dimen_30px"
+            android:visibility="gone"
+            android:background="@color/white"
+            />
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/v_video_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30px"
+        android:background="@color/page_base_background"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/img_colleage_origanization"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_180px"
+        android:src="@drawable/shu_img_mechanism"
+        android:clickable="true"/>
+
+    <View
+        android:id="@+id/v_orz_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30px"
+        android:background="@color/page_base_background"/>
+
+</LinearLayout>
+
+

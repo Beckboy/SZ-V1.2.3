@@ -1,0 +1,558 @@
+[
+    {
+        "outputFile": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-zh/values-zh.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 51,
+                    "endOffset": 102
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 51,
+                        "endOffset": 102
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 107,
+                    "endColumn": 51,
+                    "endOffset": 154
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endColumn": 51,
+                        "endOffset": 154
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 159,
+                    "endColumn": 51,
+                    "endOffset": 206
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 159,
+                        "endColumn": 51,
+                        "endOffset": 206
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 211,
+                    "endColumn": 51,
+                    "endOffset": 258
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 211,
+                        "endColumn": 51,
+                        "endOffset": 258
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 263,
+                    "endColumn": 64,
+                    "endOffset": 323
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 263,
+                        "endColumn": 64,
+                        "endOffset": 323
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 328,
+                    "endColumn": 60,
+                    "endOffset": 384
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 328,
+                        "endColumn": 60,
+                        "endOffset": 384
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 389,
+                    "endColumn": 50,
+                    "endOffset": 435
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 389,
+                        "endColumn": 50,
+                        "endOffset": 435
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 440,
+                    "endColumn": 51,
+                    "endOffset": 487
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 440,
+                        "endColumn": 51,
+                        "endOffset": 487
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 492,
+                    "endColumn": 51,
+                    "endOffset": 539
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 492,
+                        "endColumn": 51,
+                        "endOffset": 539
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 544,
+                    "endColumn": 55,
+                    "endOffset": 595
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 544,
+                        "endColumn": 55,
+                        "endOffset": 595
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 600,
+                    "endColumn": 50,
+                    "endOffset": 646
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 600,
+                        "endColumn": 50,
+                        "endOffset": 646
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 651,
+                    "endColumn": 57,
+                    "endOffset": 704
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 651,
+                        "endColumn": 57,
+                        "endOffset": 704
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 709,
+                    "endColumn": 52,
+                    "endOffset": 757
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 709,
+                        "endColumn": 52,
+                        "endOffset": 757
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 762,
+                    "endColumn": 55,
+                    "endOffset": 813
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 762,
+                        "endColumn": 55,
+                        "endOffset": 813
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 818,
+                    "endColumn": 54,
+                    "endOffset": 868
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 818,
+                        "endColumn": 54,
+                        "endOffset": 868
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 873,
+                    "endColumn": 49,
+                    "endOffset": 918
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 873,
+                        "endColumn": 49,
+                        "endOffset": 918
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 923,
+                    "endColumn": 62,
+                    "endOffset": 981
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 923,
+                        "endColumn": 62,
+                        "endOffset": 981
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 986,
+                    "endColumn": 47,
+                    "endOffset": 1029
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 986,
+                        "endColumn": 47,
+                        "endOffset": 1029
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1034,
+                    "endColumn": 57,
+                    "endOffset": 1087
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1034,
+                        "endColumn": 57,
+                        "endOffset": 1087
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1092,
+                    "endColumn": 46,
+                    "endOffset": 1134
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1092,
+                        "endColumn": 46,
+                        "endOffset": 1134
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1139,
+                    "endColumn": 54,
+                    "endOffset": 1189
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1139,
+                        "endColumn": 54,
+                        "endOffset": 1189
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1194,
+                    "endColumn": 57,
+                    "endOffset": 1247
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1194,
+                        "endColumn": 57,
+                        "endOffset": 1247
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1252,
+                    "endColumn": 60,
+                    "endOffset": 1308
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1252,
+                        "endColumn": 60,
+                        "endOffset": 1308
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1313,
+                    "endColumn": 53,
+                    "endOffset": 1362
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1313,
+                        "endColumn": 53,
+                        "endOffset": 1362
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1367,
+                    "endColumn": 74,
+                    "endOffset": 1437
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1367,
+                        "endColumn": 74,
+                        "endOffset": 1437
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1442,
+                    "endColumn": 64,
+                    "endOffset": 1502
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1442,
+                        "endColumn": 64,
+                        "endOffset": 1502
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1507,
+                    "endColumn": 66,
+                    "endOffset": 1569
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1507,
+                        "endColumn": 66,
+                        "endOffset": 1569
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1574,
+                    "endColumn": 71,
+                    "endOffset": 1641
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1574,
+                        "endColumn": 71,
+                        "endOffset": 1641
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1646,
+                    "endColumn": 63,
+                    "endOffset": 1705
+                },
+                "from": {
+                    "file": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/values-zh/values-zh.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1646,
+                        "endColumn": 63,
+                        "endOffset": 1705
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_home_question_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:lines="2"
+            android:textColor="@color/c_black_55626e"
+            android:textSize="@dimen/f_40" />
+
+        <TextView
+            android:id="@+id/tv_home_question_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_home_question_title"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:lines="3"
+            android:textColor="@color/c_gray_95a3b1"
+            android:textSize="@dimen/f_32" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

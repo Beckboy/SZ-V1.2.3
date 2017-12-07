@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/actionbar_base_background"
+    android:orientation="vertical">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        app:background="@color/white"
+        app:center_title_text_style="@style/text_36_c_gray_242e42"
+        app:left_first_image="@drawable/icon_live_back"
+        app:left_first_visibility="visible"
+        app:left_second_text="返回"
+        app:title="报名成功"
+        app:title_style="normal_img" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/common_padding"
+        android:layout_marginRight="@dimen/common_padding">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_corners"
+            android:alpha="0.1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_corners"
+            android:alpha="0.3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_corners"
+            android:alpha="0.5"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_corners"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/img_default_course_system"
+                android:scaleType="fitXY" />
+
+
+            <TextView
+                android:id="@+id/txtApplyResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_120px"
+                android:text="@string/msg_apply_success"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/font_size_21sp" />
+
+            <TextView
+                android:id="@+id/txtHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_40px"
+                android:text="@string/msg_o_pay_result_hint"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/c_gray_8392a0"
+                android:lineSpacingMultiplier="1.2"
+                android:textSize="@dimen/common_font_size_medium" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+

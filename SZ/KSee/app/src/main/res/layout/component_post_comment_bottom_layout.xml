@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100px">
+
+        <LinearLayout
+            android:id="@+id/ll_post_comment_approval"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_post_comment_approval"
+                android:layout_width="@dimen/dimen_50px"
+                android:layout_height="@dimen/dimen_50px"
+                android:layout_marginLeft="@dimen/dimen_24px"
+                android:background="@drawable/icon_post_approval" />
+
+            <TextView
+                android:id="@+id/tv_post_comment_approval_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_2px"
+                android:layout_marginRight="@dimen/dimen_50px"
+                android:text="赞"
+                android:textColor="@color/c_gray_aebdcd"
+                android:textSize="@dimen/f_28" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_post_comment_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/ll_post_comment_approval"
+            android:paddingLeft="@dimen/dimen_26px"
+            android:paddingRight="@dimen/dimen_26px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="回复"
+                android:textColor="@color/c_gray_aebdcd"
+                android:textSize="@dimen/f_28" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

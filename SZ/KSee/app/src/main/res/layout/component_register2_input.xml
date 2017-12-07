@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edit_register2_name"
+        android:layout_width="match_parent"
+        android:hint="你的姓名"
+        style="@style/edit_40_CCCCCC"/>
+
+    <TextView
+        style="@style/line_2_90_E2D7CC"/>
+
+    <EditText
+        android:id="@+id/edit_register2_school"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_34px"
+        android:hint="你的机构/学校"
+        style="@style/edit_40_CCCCCC"/>
+
+    <TextView
+        style="@style/line_2_90_E2D7CC"/>
+
+</LinearLayout>

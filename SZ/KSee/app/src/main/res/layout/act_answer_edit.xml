@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_answer_edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        junhsue:left_second_text="返回"
+        junhsue:left_second_visibility="visible"
+        junhsue:right_text="发布"
+        junhsue:right_visibility="visible"
+        junhsue:title_style="normal_txt" />
+
+    <TextView
+        android:id="@+id/tv_comment_edit_remind"
+        style="@style/text_36_c_gray_b7bcc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ab_answer_edit_title"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:layout_marginTop="@dimen/dimen_10px"
+        android:text="@string/answer_edit_hint" />
+
+    <EditText
+        android:id="@+id/et_comment_content"
+        style="@style/text_f_36_c_3c4350"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_comment_edit_remind"
+        android:layout_marginBottom="@dimen/dimen_30px"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:layout_marginRight="@dimen/dimen_30px"
+        android:layout_marginTop="@dimen/dimen_4px"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:textCursorDrawable="@drawable/cursor_yellow" />
+
+</RelativeLayout>

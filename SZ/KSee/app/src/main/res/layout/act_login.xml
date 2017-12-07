@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.junhsue.ksee.LoginActivity" >
+
+    <VideoView
+        android:id="@+id/video_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/dimen_100px"
+            android:layout_height="@dimen/dimen_220px"
+            android:src="@drawable/pic_logo_000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_40px"
+        android:paddingRight="@dimen/dimen_40px"
+        android:layout_centerInParent="true">
+        <include
+            android:id="@+id/input"
+            layout="@layout/component_login_input"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login_jumpIn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_88px"
+        android:layout_below="@+id/ll"
+        android:layout_marginLeft="@dimen/dimen_40px"
+        android:layout_marginRight="@dimen/dimen_40px"
+        android:background="@drawable/selector_login_btn_jumpin"
+        android:text="快 速 登 录"
+        android:textColor="#F5F5F5"
+        android:textSize="@dimen/f_36"
+        android:onClick="onclick"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_login_jumpIn"
+        android:layout_marginTop="@dimen/dimen_100px">
+
+        <LinearLayout
+            android:id="@+id/ll_other_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="@dimen/dimen_120px"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/c_gray_97"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_50px"
+                android:layout_marginRight="@dimen/dimen_50px"
+                android:text="其它登录方式"
+                android:textColor="#CCCCCC"/>
+            <View
+                android:layout_width="@dimen/dimen_120px"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/c_gray_97"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_social"
+            android:layout_width="@dimen/dimen_62px"
+            android:layout_height="@dimen/dimen_62px"
+            android:background="@drawable/login_icon_wechat"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimen_28px"
+            android:layout_below="@+id/ll_other_login"
+            android:onClick="onclick"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_login_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginBottom="40px"
+        android:visibility="invisible">
+        <TextView
+            android:id="@+id/tv_noregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_28px"
+            android:textColor="#FFFFFF"
+            android:text="还没有注册？"/>
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:text="  立即注册"
+            android:clickable="true"
+            android:onClick="onclick"
+            style="@style/f_28_CDAC8D"
+            android:layout_toRightOf="@+id/tv_noregister"/>
+
+        <TextView
+            android:id="@+id/tv_forgetPassword"
+            android:text="忘记密码"
+            android:clickable="true"
+            android:onClick="onclick"
+            style="@style/f_28_CDAC8D"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

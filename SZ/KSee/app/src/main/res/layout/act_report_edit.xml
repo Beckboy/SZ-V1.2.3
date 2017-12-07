@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_report_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:title="举报"
+        junhsue:title_style="normal_img" />
+
+    <RelativeLayout
+        android:id="@+id/rl_report_select_remind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70px"
+        android:layout_below="@+id/ab_report_title"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_20px"
+            android:background="@drawable/icon_bar_top_shadow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_40px"
+            android:text="选择举报内容"
+            android:textColor="@color/c_gray_aebdcd"
+            android:textSize="@dimen/f_28" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_report_select_remind"
+        android:layout_marginBottom="@dimen/dimen_100px"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.junhsue.ksee.view.CommonListView
+                android:id="@+id/clv_report_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transent"
+                android:divider="@color/white"
+                android:overScrollMode="never" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30px"
+                android:background="@color/page_commuity_background" />
+
+            <EditText
+                android:id="@+id/et_report_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:cursorVisible="true"
+                android:hint="@string/msg_report_edit_hint"
+                android:padding="@dimen/dimen_40px"
+                android:textColorHint="@color/c_gray_aebdcd"
+                android:textCursorDrawable="@drawable/cursor_yellow"
+                android:textSize="@dimen/f_34" />
+
+            <TextView
+                android:id="@+id/tv_text_limit"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/dimen_30px"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="100字"
+                android:textColor="@color/c_gray_aebdcd"
+                android:textSize="@dimen/dimen_22px" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_report_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100px"
+        android:layout_alignParentBottom="true"
+        android:background="#FFC84A"
+        android:clickable="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_next_white"
+            android:gravity="center"
+            android:paddingRight="@dimen/dimen_10px"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/f_40" />
+    </RelativeLayout>
+</RelativeLayout>

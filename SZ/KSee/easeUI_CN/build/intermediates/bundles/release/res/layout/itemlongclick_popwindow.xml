@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_rec_radius_5dp_fff">
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="复制"
+            android:background="@drawable/selector_itemlongclick"/>
+        <View
+            android:id="@+id/v_copy"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5"/>
+        <TextView
+            android:id="@+id/tv_revoke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="撤回"
+            android:background="@drawable/selector_itemlongclick"/>
+        <View
+            android:id="@+id/v_revoke"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5"/>
+        <TextView
+            android:id="@+id/tv_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="删除"
+            android:background="@drawable/selector_itemlongclick"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

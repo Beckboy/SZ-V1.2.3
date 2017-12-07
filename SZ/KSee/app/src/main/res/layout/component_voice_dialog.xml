@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <!--头部布局-->
+        <RelativeLayout
+            android:id="@+id/rl_voice_heard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_voice_back"
+                style="@style/text_f_30_c_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimen_36px"
+                android:paddingLeft="@dimen/dimen_40px"
+                android:paddingRight="@dimen/dimen_40px"
+                android:paddingTop="@dimen/dimen_36px"
+                android:text="@string/cancel_all" />
+
+
+            <TextView
+                android:id="@+id/tv_voice_submit"
+                style="@style/text_f_30_c_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimen_36px"
+                android:paddingLeft="@dimen/dimen_40px"
+                android:paddingRight="@dimen/dimen_40px"
+                android:paddingTop="@dimen/dimen_36px"
+                android:text="@string/msg_confirm" />
+            <!--底部布局-->
+            <com.junhsue.ksee.view.VoiceDecibelLengthAnimView
+                android:id="@+id/voice_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_50px"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_30px"
+                android:paddingLeft="@dimen/dimen_40px"
+                android:paddingRight="@dimen/dimen_40px"
+                android:paddingTop="@dimen/dimen_30px" />
+
+            <com.junhsue.ksee.view.TimerTextView
+                android:id="@+id/tv_voice_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_50px"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_30px"
+                android:paddingLeft="@dimen/dimen_10px"
+                android:paddingRight="@dimen/dimen_10px"
+                android:paddingTop="@dimen/dimen_30px"
+                android:textColor="@android:color/black"
+                />
+        </RelativeLayout>
+
+        <!--语音按钮布局-->
+        <RelativeLayout
+            android:id="@+id/rl_voice_middle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_voice_heard"
+            android:paddingBottom="@dimen/dimen_20px"
+            android:paddingTop="@dimen/dimen_36px">
+
+            <Button
+                android:id="@+id/btn_record"
+                android:layout_width="@dimen/dimen_200px"
+                android:layout_height="@dimen/dimen_200px"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_answer_voice_record" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_voice_middle_layout"
+            android:paddingBottom="@dimen/dimen_50px">
+
+            <TextView
+                android:id="@+id/tv_voice_remind"
+                style="@style/text_f_26_c_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/dimen_20px"
+                android:paddingTop="@dimen/dimen_20px"
+                android:text="@string/msg_voice_start_record" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

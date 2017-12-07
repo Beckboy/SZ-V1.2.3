@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/act_application_enter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.junhsue.ksee.ApplicationEnterActivity">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/title_application_enter_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_second_text="返回"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:right_img_one="@drawable/icon_live_share"
+        junhsue:right_visibility="visible"
+        junhsue:title_style="normal_img" />
+
+    <com.junhsue.ksee.view.WebPageView
+        android:id="@+id/application_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_below="@+id/title_art_detail"/>
+
+</LinearLayout>

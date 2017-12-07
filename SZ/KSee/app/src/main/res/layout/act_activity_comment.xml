@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_base_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ab_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height">
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_padding"
+            android:paddingRight="@dimen/common_padding"
+            android:text="取消"
+            android:textColor="@color/c_yellow_cdac8d"
+            android:textSize="@dimen/common_font_size_normal" />
+
+
+        <TextView
+            android:id="@+id/txt_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_padding"
+            android:paddingRight="@dimen/common_padding"
+            android:text="@string/release"
+            android:textColor="@color/c_yellow_cdac8d"
+            android:textSize="@dimen/common_font_size_normal" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_comment_edit_remind"
+        style="@style/text_36_c_gray_b7bcc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ab_answer_edit_title"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:layout_marginTop="@dimen/dimen_10px"
+        android:text="@string/answer_edit_hint" />
+
+    <EditText
+        android:id="@+id/txt_contenet"
+        style="@style/text_f_36_c_3c4350"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_comment_edit_remind"
+        android:layout_marginBottom="@dimen/dimen_30px"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:layout_marginRight="@dimen/dimen_30px"
+        android:layout_marginTop="@dimen/dimen_4px"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:textCursorDrawable="@drawable/cursor_yellow" />
+
+</LinearLayout>

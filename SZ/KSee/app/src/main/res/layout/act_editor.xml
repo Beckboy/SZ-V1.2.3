@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/act_editor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_my_editorData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:left_second_text="返回"
+        junhsue:left_second_visibility="visible"
+        junhsue:title="编辑个人资料"
+        junhsue:title_style="normal_txt" />
+
+    <RelativeLayout
+        android:id="@+id/rl_my_editorData_headImg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_220px"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:layout_marginRight="@dimen/dimen_20px"
+        android:clickable="true"
+        android:onClick="onclick">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头像"
+            android:textSize="@dimen/f_36"
+            android:textColor="#3C4350"
+            android:layout_marginBottom="@dimen/dimen_84px"
+            android:layout_alignParentBottom="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll_my_editorData_headImg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_160px"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+            <com.junhsue.ksee.view.CircleImageView
+                android:id="@+id/img_editorData_headImg"
+                android:layout_width="@dimen/dimen_160px"
+                android:layout_height="@dimen/dimen_160px"
+                android:src="@drawable/pic_default_avatar"
+                junhsue:civ_border_width="@dimen/dimen_8px"
+                junhsue:civ_border_color="#E2D7CC"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_in_normal"
+                android:layout_marginLeft="@dimen/dimen_10px"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="@dimen/dimen_30px"
+        style="@style/my_setting_line_E5E5E5" />
+
+    <include layout="@layout/component_act_editor_item"/>
+
+</LinearLayout>

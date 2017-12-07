@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_base_background">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_home_search_heard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        junhsue:background="@color/actionbar_base_background"
+        junhsue:left_first_image="@drawable/selector_btn_head_back"
+        junhsue:left_second_text="问"
+        junhsue:left_first_visibility="invisible"
+        junhsue:left_second_visibility="invisible"
+        junhsue:left_second_text_color="@color/actionbar_base_background"
+        junhsue:right_img_one="@drawable/selector_social_search"
+        junhsue:right_visibility="visible"
+        junhsue:title="问答"
+        junhsue:title_style="normal_img" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_pcf_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ab_home_search_heard"
+        android:background="@color/page_base_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        junhsue:ptr_duration_to_close="200"
+        junhsue:ptr_duration_to_close_header="1000"
+        junhsue:ptr_keep_header_when_refresh="true"
+        junhsue:ptr_mode="both"
+        junhsue:ptr_pull_to_fresh="false"
+        junhsue:ptr_ratio_of_header_height_to_refresh="1.2"
+        junhsue:ptr_resistance="1.7">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--     <include
+                         layout="@layout/component_social_circle_greatest" />
+     -->
+                <RelativeLayout
+                    android:id="@+id/rl_social_selected_content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_24px"
+                    android:background="@android:color/white"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/ll_social_circle_selected_heard"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_80px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_f_26_c_8392a0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_30px"
+                            android:layout_weight="1"
+                            android:text="@string/greatest_question" />
+
+                        <TextView
+                            style="@style/text_f_26_c_cdac8d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/browse_all_greatest" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_14px"
+                            android:layout_height="@dimen/dimen_24px"
+                            android:layout_marginLeft="@dimen/dimen_10px"
+                            android:layout_marginRight="@dimen/dimen_24px"
+                            android:background="@drawable/selector_arrow_right" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/v_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_below="@+id/ll_social_circle_selected_heard"
+                        android:background="@color/c_gray_e5" />
+
+                    <com.junhsue.ksee.view.CommonListView
+                        android:id="@+id/lv_selected_questions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/v_divider"
+                        android:divider="@android:color/transparent"
+                        android:listSelector="@android:color/transparent"
+                        android:scrollbars="none" />
+                </RelativeLayout>
+
+                <com.junhsue.ksee.view.CommonListView
+                    android:id="@+id/lv_newest_questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@android:color/transparent"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_ask_float"
+        android:layout_width="@dimen/dimen_100px"
+        android:layout_height="@dimen/dimen_100px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dimen_30px"
+        android:layout_marginRight="@dimen/dimen_30px"
+        android:background="@drawable/selector_ask_float"
+        android:scaleType="fitXY" />
+
+
+</RelativeLayout>

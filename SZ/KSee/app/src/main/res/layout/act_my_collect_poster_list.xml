@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.junhsue.ksee.MyCollectPosterActivity">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_my_collect_post"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:right_text_style="@style/text_f_30_c_3c4350"
+        junhsue:right_text="&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;编辑"
+        junhsue:right_visibility="visible"
+        junhsue:title="我的收藏"
+        junhsue:title_style="normal_txt" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ptrClassicFrameLayout_my_collect_post"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/ab_my_collect_post"
+        android:background="#eee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_my_collect_post_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_70px"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_20px"
+                        android:background="@drawable/icon_bar_top_shadow"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="看看您都有过哪些收藏"
+                        android:textColor="@color/c_gray_aebdcd"
+                        android:textSize="@dimen/f_28"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_40px"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/c_gray_d6e3f0"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_img_bitmap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/dimen_400px"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="您在钬花暂无任何收藏哦～ \n 有趣的内容这么多，快去收藏一些吧！"
+                            style="@style/text_f_30_aebdcd"/>
+                        <ImageView
+                            android:layout_width="@dimen/dimen_220px"
+                            android:layout_height="@dimen/dimen_220px"
+                            android:src="@drawable/bg_my_colleage_del"
+                            android:layout_marginTop="@dimen/dimen_48px"
+                            />
+                    </LinearLayout>
+
+                    <com.junhsue.ksee.view.CommonListView
+                        android:id="@+id/lv_my_collect_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="@color/transent"
+                        android:divider="@null"
+                        android:scrollbars="vertical"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</RelativeLayout>

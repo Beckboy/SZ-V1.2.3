@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_40px"
+    android:layout_gravity="center">
+
+
+    <RadioGroup
+        android:id="@+id/rg_login_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_68px"
+        android:checkedButton="@+id/rb_quick"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_quick"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="快速登录"
+            android:textColor="@color/c_gray_ccc"
+            android:background="@drawable/selector_login_type"
+            android:gravity="center"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/rb_pass"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="密码登录"
+            android:textColor="@color/c_gray_f5"
+            android:layout_marginLeft="@dimen/dimen_40px"
+            android:background="@drawable/selector_login_type"
+            android:gravity="center"
+            android:button="@null" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_20px">
+        <include
+            android:id="@+id/include_login_quick"
+            layout="@layout/component_login_input_quick"/>
+        <include
+            android:id="@+id/include_login_password"
+            layout="@layout/component_login_input_password"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

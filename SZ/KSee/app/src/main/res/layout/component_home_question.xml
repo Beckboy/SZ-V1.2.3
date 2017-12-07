@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_home_content_question"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_25px"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_80px"
+            android:paddingTop="@dimen/dimen_32px">
+
+            <com.junhsue.ksee.view.IndicatorView
+                android:id="@+id/iv_question_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_356px"
+                android:layout_marginTop="@dimen/dimen_34px"
+                junhsue:can_play="true"
+                junhsue:dotmargin_bottom="@dimen/dimen_40px"></com.junhsue.ksee.view.IndicatorView>
+
+            <LinearLayout
+                android:id="@+id/ll_home_question_ask_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_c_f3f6f7_corner_200px"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_10px"
+                android:paddingLeft="@dimen/dimen_44px"
+                android:paddingRight="@dimen/dimen_30px"
+                android:paddingTop="@dimen/dimen_10px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我要提问"
+                    android:textColor="@color/c_gray_95a3b1"
+                    android:textSize="@dimen/f_28" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_32px"
+                    android:layout_height="@dimen/dimen_24px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_4px"
+                    android:background="@drawable/icon_home_enter_ask" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen_260px"
+            android:layout_height="@dimen/dimen_64px"
+            android:background="@drawable/icon_home_content_question_tag"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_f_36_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26dp"
+                android:text="大家都在问" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_my_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_my_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:left_second_text="吾"
+        junhsue:left_second_visibility="visible"
+        junhsue:title="设置"
+        junhsue:title_style="normal_txt" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:layout_below="@+id/ab_my_setting">
+        <TextView
+            android:id="@+id/tv_my_setting_editData"
+            android:text="编辑个人资料"
+            android:drawableRight="@drawable/icon_in_normal"
+            style="@style/my_setting_item"/>
+
+        <TextView
+            style="@style/my_setting_line_E5E5E5"/>
+
+        <TextView
+            android:id="@+id/tv_my_setting_accountManager"
+            android:text="账号管理"
+            android:drawableRight="@drawable/icon_in_normal"
+            style="@style/my_setting_item"/>
+
+        <TextView
+            style="@style/my_setting_line_E5E5E5"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_my_setting_aboutSZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_40px"
+            android:layout_marginRight="@dimen/dimen_30px"
+            android:paddingBottom="@dimen/dimen_40px"
+            android:clickable="true"
+            android:onClick="onclick">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于钬花"
+                style="@style/text_f_36_c_3c4350"
+                android:clickable="false"/>
+            <TextView
+                android:id="@+id/tv_my_setting_aboutSZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_f_36_c_3c4350"
+                android:layout_toLeftOf="@+id/tv_red_circle"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/tv_red_circle"
+                android:layout_width="@dimen/dimen_16px"
+                android:layout_height="@dimen/dimen_16px"
+                android:layout_toLeftOf="@+id/tv_right"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/dimen_20px"
+                android:background="@drawable/shape_circle_red"/>
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_20px"
+                android:background="@drawable/icon_in_normal"/>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/my_setting_line_E5E5E5"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_my_setting_versionUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_40px"
+            android:layout_marginRight="@dimen/dimen_30px"
+            android:paddingBottom="@dimen/dimen_40px"
+            android:clickable="true"
+            android:visibility="gone"
+            android:onClick="onclick">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本更新"
+                style="@style/text_f_36_c_3c4350"
+                android:clickable="false"/>
+            <TextView
+                android:id="@+id/tv_my_setting_versionUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V1.1.1"
+                style="@style/text_f_36_c_3c4350"
+                android:layout_alignParentRight="true"
+                android:clickable="false"/>
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            style="@style/my_setting_line_E5E5E5"/>
+
+        <TextView
+            android:id="@+id/tv_my_setting_idearesult"
+            android:text="意见反馈"
+            android:drawableRight="@drawable/icon_in_normal"
+            style="@style/my_setting_item"/>
+
+        <TextView
+            style="@style/my_setting_line_E5E5E5"/>
+
+        <TextView
+            android:id="@+id/tv_my_setting_receiver"
+            android:text="接收推送通知"
+            android:drawableRight="@drawable/icon_in_normal"
+            style="@style/my_setting_item"
+            android:visibility="gone"/>
+
+        <TextView
+            style="@style/my_setting_line_E5E5E5"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_my_setting_cleanSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_40px"
+            android:layout_marginRight="@dimen/dimen_30px"
+            android:paddingBottom="@dimen/dimen_40px"
+            android:clickable="true"
+            android:onClick="onclick">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清理缓存"
+                style="@style/text_f_36_c_3c4350"
+                android:clickable="false"/>
+            <TextView
+                android:id="@+id/tv_my_setting_SaveSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00M"
+                style="@style/text_f_36_c_3c4350"
+                android:layout_alignParentRight="true"
+                android:clickable="false"/>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/my_setting_line_E5E5E5"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_my_setting_quitLogin"
+        android:layout_width="@dimen/dimen_334px"
+        android:layout_height="@dimen/dimen_80px"
+        android:text="退出登录"
+        android:textSize="@dimen/f_36"
+        android:textColor="#CDAC8D"
+        android:background="@drawable/shape_bg_login_btn"
+        android:layout_below="@+id/ll_my_setting"
+        android:layout_marginTop="@dimen/dimen_70px"
+        android:layout_centerHorizontal="true"
+        android:onClick="onclick"/>
+
+
+</RelativeLayout>

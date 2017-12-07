@@ -1,0 +1,561 @@
+
+<resources>
+    、
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="myTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/transent</item>
+        <item name="colorPrimaryDark">@color/actionbar_base_background</item>
+        <item name="colorAccent">@color/transent</item>
+    </style>
+
+    <style name="splashTheme" parent="myTheme">
+        <!--<item name="android:windowBackground">@drawable/bg_splash</item>-->
+    </style>
+
+    <!--分享半瓶对话框-->
+    <style name="ActionSheetStyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <!-- Dialog_Loadind的对话弹吐框 -->
+    <style name="common_dialog_style" parent="@android:style/Theme.Holo.DialogWhenLarge">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="CommonDialog" parent="android:style/Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--字体样式-->
+    <style name="text_f_36_white">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/f_36</item>
+    </style>
+
+    <style name="text_f_92_dba42c">
+        <item name="android:textColor">#DBA42C</item>
+        <item name="android:textSize">@dimen/f_92</item>
+    </style>
+
+    <style name="text_f_48_c_3c4350">
+        <item name="android:textColor">@color/c_black_3c4350</item>
+        <item name="android:textSize">@dimen/f_48</item>
+    </style>
+
+    <style name="text_f_40_c_666">
+        <item name="android:textColor">@color/c_gray_666666</item>
+        <item name="android:textSize">@dimen/f_40</item>
+    </style>
+
+    <style name="text_f_36_c_8392a0">
+        <item name="android:textColor">@color/c_gray_8392a0</item>
+        <item name="android:textSize">@dimen/f_36</item>
+    </style>
+
+    <style name="text_f_36_c_3c4350">
+        <item name="android:textColor">@color/c_black_3c4350</item>
+        <item name="android:textSize">@dimen/f_36</item>
+    </style>
+
+    <style name="text_36_c_gray_b7bcc1">
+        <item name="android:textColor">@color/c_gray_9da1a7</item>
+        <item name="android:textSize">@dimen/f_36</item>
+    </style>
+
+    <style name="text_f_36_c_cdac8d">
+        <item name="android:textColor">@color/c_yellow_cdac8d</item>
+        <item name="android:textSize">@dimen/f_36</item>
+    </style>
+
+    <style name="text_f_36_c_cb">
+        <item name="android:textColor">@color/c_gray_cb</item>
+        <item name="android:textSize">@dimen/f_36</item>
+    </style>
+
+    <style name="text_f_30_c_3c4350">
+        <item name="android:textSize">@dimen/f_30</item>
+        <item name="android:textColor">@color/c_black_3c4350</item>
+    </style>
+
+    <style name="text_f_30_c_black_55626e">
+        <item name="android:textSize">@dimen/f_30</item>
+        <item name="android:textColor">@color/c_black_55626e</item>
+    </style>
+
+    <style name="text_f_32_c_3c4350">
+        <item name="android:textSize">@dimen/f_32</item>
+        <item name="android:textColor">@color/c_black_3c4350</item>
+    </style>
+
+    <style name="text_f_34_c_3c4350">
+        <item name="android:textColor">@color/c_black_3c4350</item>
+        <item name="android:textSize">@dimen/f_34</item>
+    </style>
+
+
+    <style name="text_f_32_c_8392a0">
+        <item name="android:textColor">@color/c_gray_8392a0</item>
+        <item name="android:textSize">@dimen/f_32</item>
+    </style>
+
+    <style name="text_f_34_c_c89016">
+        <item name="android:textColor">@color/c_yellow_c89016</item>
+        <item name="android:textSize">@dimen/f_34</item>
+    </style>
+
+    <style name="text_f_30_c_8392a0">
+        <item name="android:textSize">@dimen/f_30</item>
+        <item name="android:textColor">@color/c_gray_8392a0</item>
+    </style>
+
+    <style name="text_f_30_c_2c3239">
+        <item name="android:textSize">@dimen/f_30</item>
+        <item name="android:textColor">@color/c_black_2c3239</item>
+    </style>
+
+    <style name="text_f_26_c_8392a0">
+        <item name="android:textSize">@dimen/f_26</item>
+        <item name="android:textColor">@color/c_gray_8392a0</item>
+    </style>
+
+    <style name="text_f_26_c_999">
+        <item name="android:textSize">@dimen/f_26</item>
+        <item name="android:textColor">@color/c_gray_999</item>
+    </style>
+
+    <style name="text_f_20_c_8392a0">
+        <item name="android:textSize">@dimen/f_20</item>
+        <item name="android:textColor">@color/c_gray_8392a0</item>
+    </style>
+
+    <style name="text_f_20_c_cdac8d">
+        <item name="android:textSize">@dimen/f_20</item>
+        <item name="android:textColor">@color/c_yellow_cdac8d</item>
+    </style>
+
+    <style name="text_f_18_c_9da1a7">
+        <item name="android:textSize">@dimen/f_18</item>
+        <item name="android:textColor">@color/c_gray_9da1a7</item>
+    </style>
+
+    <style name="text_f_30_c_9da1a7">
+        <item name="android:textSize">@dimen/f_30</item>
+        <item name="android:textColor">@color/c_gray_9da1a7</item>
+    </style>
+
+    <style name="text_f_30_c_cdac8d">
+        <item name="android:textSize">@dimen/f_30</item>
+        <item name="android:textColor">@color/c_yellow_cdac8d</item>
+    </style>
+
+    <style name="text_f_30_c_999">
+        <item name="android:textSize">@dimen/f_30</item>
+        <item name="android:textColor">@color/c_gray_999</item>
+    </style>
+
+    <style name="text_f_30_c_333">
+        <item name="android:textSize">@dimen/f_30</item>
+        <item name="android:textColor">@color/c_back_333</item>
+    </style>
+
+    <style name="text_f_30_c_cb">
+        <item name="android:textSize">@dimen/f_30</item>
+        <item name="android:textColor">@color/c_gray_cb</item>
+    </style>
+
+    <style name="text_f_26_c_cdac8d">
+        <item name="android:textSize">@dimen/f_26</item>
+        <item name="android:textColor">@color/c_yellow_cdac8d</item>
+    </style>
+
+
+    <style name="text_f_24_c_8392a0">
+        <item name="android:textSize">@dimen/f_24</item>
+        <item name="android:textColor">@color/c_gray_8392a0</item>
+    </style>
+
+    <style name="text_f_18_c_cdac8d">
+        <item name="android:textSize">@dimen/f_18</item>
+        <item name="android:textColor">@color/c_yellow_cdac8d</item>
+    </style>
+
+    <style name="text_f_22_c_3c4350">
+        <item name="android:textSize">@dimen/f_22</item>
+        <item name="android:textColor">@color/c_black_3c4350</item>
+    </style>
+
+    <style name="text_f_28_c_black_55626e">
+        <item name="android:textSize">@dimen/f_28</item>
+        <item name="android:textColor">@color/c_black_55626e</item>
+    </style>
+
+
+    <style name="text_f_24_c_aebdcd">
+        <item name="android:textColor">@color/c_gray_aebdcd</item>
+        <item name="android:textSize">@dimen/f_24</item>
+    </style>
+
+    <style name="text_f_24_c_cdac8d">
+        <item name="android:textSize">@dimen/f_24</item>
+        <item name="android:textColor">@color/c_yellow_cdac8d</item>
+    </style>
+
+
+    <style name="text_f_24_c_e2d7cc">
+        <item name="android:textColor">@color/c_gray_e2d7cc</item>
+        <item name="android:textSize">@dimen/f_24</item>
+    </style>
+
+    <style name="text_f_24_c_3c4350">
+        <item name="android:textColor">@color/c_black_3c4350</item>
+        <item name="android:textSize">@dimen/f_24</item>
+    </style>
+
+    <style name="text_f_24_c_white">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/f_24</item>
+    </style>
+
+    <style name="text_f_24_c_9da1a7">
+        <item name="android:textColor">@color/c_gray_9da1a7</item>
+        <item name="android:textSize">@dimen/f_24</item>
+    </style>
+
+    <style name="text_f_24_c_919499">
+        <item name="android:textColor">@color/c_gray_919499</item>
+        <item name="android:textSize">@dimen/f_24</item>
+    </style>
+
+    <style name="text_f_48_cb7babd">
+        <item name="android:textColor">@color/c_gray_b7babd</item>
+        <item name="android:textSize">@dimen/f_48</item>
+    </style>
+
+    <style name="text_f_48_c8392a0">
+        <item name="android:textColor">@color/c_gray_8392a0</item>
+        <item name="android:textSize">@dimen/f_48</item>
+    </style>
+
+    <style name="text_f_42_c8392a0">
+        <item name="android:textColor">@color/c_gray_8392a0</item>
+        <item name="android:textSize">@dimen/f_42</item>
+    </style>
+
+    <style name="text_f_36_cb7babd">
+        <item name="android:textColor">@color/c_gray_b7babd</item>
+        <item name="android:textSize">@dimen/f_36</item>
+    </style>
+
+    <style name="text_f_36_c8392a0">
+        <item name="android:textColor">@color/c_gray_8392a0</item>
+        <item name="android:textSize">@dimen/f_36</item>
+    </style>
+
+    <style name="text_f_48_white">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/f_48</item>
+    </style>
+
+    <style name="text_f_48_cdac8d">
+        <item name="android:textColor">@color/c_yellow_cdac8d</item>
+        <item name="android:textSize">@dimen/f_48</item>
+    </style>
+
+    <style name="text_f_28_b0">
+        <item name="android:textColor">@color/c_gray_b0</item>
+        <item name="android:textSize">@dimen/f_28</item>
+    </style>
+
+    <style name="text_f_28_c9da1a7">
+        <item name="android:textColor">@color/c_gray_9da1a7</item>
+        <item name="android:textSize">@dimen/f_28</item>
+    </style>
+
+    <style name="text_f_28_c95a3b1">
+        <item name="android:textColor">@color/c_gray_95a3b1</item>
+        <item name="android:textSize">@dimen/f_28</item>
+    </style>
+
+    <style name="text_36_c_gray_242e42">
+        <item name="android:textSize">@dimen/f_36</item>
+        <item name="android:textColor">@color/c_gray_242E42</item>
+    </style>
+
+    <style name="text_f_30_95a3b1">
+        <item name="android:textColor">@color/c_gray_95a3b1</item>
+        <item name="android:textSize">@dimen/f_30</item>
+    </style>
+    <style name="text_f_30_c_red_fc613c">
+        <item name="android:textColor">@color/c_red_fc613c</item>
+        <item name="android:textSize">@dimen/f_30</item>
+    </style>
+
+    <style name="text_f_28_1ab587">
+        <item name="android:textColor">@color/c_green_1ab587</item>
+        <item name="android:textSize">@dimen/f_28</item>
+    </style>
+
+    <style name="text_f_24_95a3b1">
+        <item name="android:textColor">@color/c_gray_95a3b1</item>
+        <item name="android:textSize">@dimen/f_24</item>
+    </style>
+
+    <!--登录界面登录、注册按钮的样式-->
+    <style name="f_40_wel">
+        <item name="android:layout_width">@dimen/dimen_260px</item>
+        <item name="android:layout_height">@dimen/dimen_80px</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">@dimen/f_34</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--文字样式：36px/#CDAC8D-->
+    <style name="f_36_CDAC8D">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#CDAC8D</item>
+        <item name="android:textSize">@dimen/f_36</item>
+    </style>
+
+    <!--文字样式：36px/#2c3239-->
+    <style name="f_36_2c3239">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#2C3239</item>
+        <item name="android:textSize">@dimen/f_36</item>
+    </style>
+
+    <!--文字样式：28px/#CDAC8D-->
+    <style name="f_28_CDAC8D">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#CDAC8D</item>
+        <item name="android:textSize">@dimen/f_28</item>
+    </style>
+
+    <!--文字样式：34px/#F5F5F5-->
+    <style name="f_34_F5F5F5">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#F5F5F5</item>
+        <item name="android:textSize">@dimen/f_34</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!--横线样式：36px/#CCC/left40-->
+    <style name="line_1_CCC">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#CCC</item>
+    </style>
+
+    <!--登录输入样式：34px/#F5F5F5/left40-->
+    <style name="edit_28_A6A6A6">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/f_34</item>
+        <item name="android:textColor">#BEC1CB</item>
+        <item name="android:textColorHint">#A6A6A6</item>
+        <item name="android:background">@null</item>
+        <item name="android:lines">1</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:cursorVisible">true</item>
+    </style>
+
+    <!--注册1输入样式：48px/#F5F5F5/left40-->
+    <style name="edit_48_CCCCCC">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/f_48</item>
+        <item name="android:textColorHint">#CCCCCC</item>
+        <item name="android:background">@null</item>
+        <item name="android:lines">1</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <!--注册1输入样式：40px/#F5F5F5/left40-->
+    <style name="edit_40_CCCCCC">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/f_40</item>
+        <item name="android:textColorHint">#CCCCCC</item>
+        <item name="android:background">@null</item>
+        <item name="android:lines">1</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+
+    <!--注册1横线样式：120px/2px/#E2D7CC-->
+    <style name="line_2_120_E2D7CC">
+        <item name="android:layout_width">@dimen/dimen_120px</item>
+        <item name="android:layout_height">2px</item>
+        <item name="android:background">#E2D7CC</item>
+        <item name="android:layout_marginTop">@dimen/dimen_2px</item>
+    </style>
+
+    <!--注册1横线样式：90px/2px/#E2D7CC-->
+    <style name="line_2_90_E2D7CC">
+        <item name="android:layout_width">@dimen/dimen_90px</item>
+        <item name="android:layout_height">2px</item>
+        <item name="android:background">#E2D7CC</item>
+        <item name="android:layout_marginTop">@dimen/dimen_30px</item>
+    </style>
+
+    <!-- 吾模块主界面item样式 -->
+    <style name="my_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_116px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#3C4350</item>
+        <item name="android:paddingLeft">@dimen/dimen_40px</item>
+        <item name="android:textSize">@dimen/f_36</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <!--设置(吾)横线样式：m/2px/#E2D7CC-->
+    <style name="my_setting_line_E5E5E5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">#E5E5E5</item>
+    </style>
+
+    <!-- 设置(吾)item列表item样式 -->
+    <style name="my_setting_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#3C4350</item>
+        <item name="android:textSize">@dimen/f_36</item>
+        <item name="android:paddingTop">@dimen/dimen_40px</item>
+        <item name="android:layout_marginRight">@dimen/dimen_30px</item>
+        <item name="android:paddingBottom">@dimen/dimen_40px</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onclick</item>
+    </style>
+
+    <!-- 设置>>编辑个人资料(吾)item列表item的Relativilayout样式 -->
+    <style name="my_editordata_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dimen_40px</item>
+        <item name="android:paddingBottom">@dimen/dimen_40px</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_30px</item>
+        <item name="android:layout_marginRight">@dimen/dimen_30px</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onclick</item>
+    </style>
+
+    <!-- 设置>>编辑个人资料(吾)item列表item的text文本提示样式 -->
+    <style name="my_editordata_item_leftTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/f_36</item>
+        <item name="android:textColor">#3C4350</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!--<item name="android:paddingTop">@dimen/dimen_40px</item>-->
+    <!--<item name="android:paddingBottom">@dimen/dimen_40px</item>-->
+    40*12+197
+
+    <!-- 设置>>编辑个人资料(吾)item列表item的RelativeLayout文本提示样式 -->
+    <style name="my_editordata_item_RL">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_30px</item>
+        <item name="android:layout_marginRight">@dimen/dimen_20px</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onclick</item>
+    </style>
+
+    <style name="colleage_tab_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/common_font_size_normal</item>
+        <item name="android:textColor">@color/c_gray_999</item>
+    </style>
+
+
+    <style name="myanswer_tab_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/common_font_size_normal</item>
+        <item name="android:textColor">@color/c_gray_999</item>
+    </style>
+
+    <style name="myanswer_tab_text">
+        <item name="android:textSize">@dimen/f_30</item>
+    </style>
+
+    <!--  这个是加入的代码 -->
+    <style name="mypopwindow_anim_style">
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/msg_card_show</item>
+        <item name="android:windowExitAnimation">@anim/msg_card_cancel</item>
+    </style>
+
+    <style name="Widget.MaterialProgressBar.ProgressBar.Horizontal"
+        parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">4dp</item>
+        <item name="android:maxHeight">4dp</item>
+    </style>
+
+    <style name="text_f06_24_c03_2c2c2c">
+        <item name="android:textColor">@color/c_gray_2c</item>
+        <item name="android:textSize">@dimen/f_24</item>
+    </style>
+
+    <style name="text_f06_24_c04_666666">
+        <item name="android:textColor">@color/c_gray_666666</item>
+        <item name="android:textSize">@dimen/f_24</item>
+    </style>
+
+    <style name="text_f_28_aebdcd">
+        <item name="android:textColor">@color/c_gray_aebdcd</item>
+        <item name="android:textSize">@dimen/f_28</item>
+    </style>
+
+    <style name="text_f_30_aebdcd">
+        <item name="android:textColor">@color/c_gray_aebdcd</item>
+        <item name="android:textSize">@dimen/f_30</item>
+    </style>
+
+    <style name="text_f02_34_708293">
+        <item name="android:textColor">@color/c_black_708293</item>
+        <item name="android:textSize">@dimen/f_34</item>
+    </style>
+
+</resources>

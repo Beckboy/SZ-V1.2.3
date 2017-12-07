@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/update_version"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="140">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新版本提示"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/f_48"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_version"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:minHeight="12px"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/layer_background_progress"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="368">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="·· 小钬花儿温馨提示 ··"
+                    android:textSize="@dimen/f_24"
+                    android:textColor="@color/c_gray_95a3b1"
+                    android:lineSpacingExtra="15px"
+                    android:lineSpacingMultiplier="0.9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_30px"
+                />
+
+                <TextView
+                    android:id="@+id/tv_version_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/version_update"
+                    android:textSize="@dimen/f_34"
+                    android:textColor="@color/c_black_54617a"
+                    android:lineSpacingExtra="15px"
+                    android:lineSpacingMultiplier="0.9"
+                    android:layout_marginTop="@dimen/dimen_94px"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/rl_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="@dimen/dimen_20px"
+                    android:layout_marginTop="@dimen/dimen_36px"
+                    android:layout_below="@+id/tv_version_hint">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="40"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/imgBtn_no"
+                        android:layout_width="0dp"
+                        android:layout_weight="256"
+                        android:layout_height="wrap_content"
+                        android:text="暂不更新"
+                        android:textSize="@dimen/f_36"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/update_no"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="24"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/imgBtn_yes"
+                        android:layout_width="0dp"
+                        android:layout_weight="256"
+                        android:layout_height="wrap_content"
+                        android:text="立即更新"
+                        android:textSize="@dimen/f_36"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/update_yes"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="40"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

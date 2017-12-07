@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_my_editor_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:left_second_text="返回"
+        junhsue:left_second_visibility="visible"
+        junhsue:title="联系地址"
+        junhsue:right_text="提交"
+        junhsue:right_visibility="visible"
+        junhsue:title_style="normal_txt"/>
+
+    <TextView
+        android:id="@+id/tv_city_my_editor_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_30px"
+        android:paddingRight="@dimen/dimen_20px"
+        android:paddingTop="@dimen/dimen_40px"
+        android:paddingBottom="@dimen/dimen_40px"
+        android:text="省 / 市 / 区"
+        android:textColor="#3C4350"
+        android:textSize="@dimen/f_36"
+        android:drawableRight="@drawable/icon_in_normal"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:onClick="onclick"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2px"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:background="#E5E5E5"/>
+
+    <EditText
+        android:id="@+id/edit_district_my_editor_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="详细地址"
+        android:textColor="#3C4350"
+        android:textColorHint="#9DA1A7"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:paddingLeft="@dimen/dimen_30px"
+        android:paddingTop="@dimen/dimen_40px"
+        android:paddingBottom="@dimen/dimen_40px"
+        android:maxLines="3"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2px"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:background="#E5E5E5"/>
+
+</LinearLayout>

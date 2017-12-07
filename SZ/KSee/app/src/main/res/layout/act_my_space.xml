@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:id="@+id/scr_list_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_list_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_380px"
+                    android:background="@color/white"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/tv_my_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/text_f_92_dba42c"
+                        android:layout_marginTop="@dimen/dimen_130px"
+                        android:layout_marginLeft="@dimen/dimen_40px"
+                        android:paddingRight="@dimen/dimen_60px"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_toLeftOf="@+id/img_my_headimg"/>
+
+                    <TextView
+                        android:id="@+id/tv_my_organization"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/text_f_34_c_c89016"
+                        android:layout_below="@+id/tv_my_name"
+                        android:layout_marginLeft="@dimen/dimen_40px"
+                        android:paddingRight="@dimen/dimen_60px"
+                        android:layout_marginTop="@dimen/dimen_10px"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_toLeftOf="@+id/img_my_headimg"/>
+
+                    <com.junhsue.ksee.view.CircleImageView
+                        android:id="@+id/img_my_headimg"
+                        android:layout_width="@dimen/dimen_130px"
+                        android:layout_height="@dimen/dimen_130px"
+                        junhsue:civ_border_width="@dimen/dimen_4px"
+                        junhsue:civ_border_color="#E2D7CC"
+                        android:layout_marginTop="@dimen/dimen_140px"
+                        android:layout_marginRight="@dimen/dimen_40px"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/pic_default_avatar"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_list_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:background="#E5E5E5"/>
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_my_questions"-->
+                        <!--android:text="我的问答"-->
+                        <!--android:drawablePadding="@dimen/dimen_10px"-->
+                        <!--android:drawableLeft="@drawable/icon_qa_normal"-->
+                        <!--style="@style/my_item"/>-->
+
+                    <Button
+                        android:id="@+id/btn_my_speak"
+                        android:text="我的发言"
+                        android:drawablePadding="@dimen/dimen_10px"
+                        android:drawableLeft="@drawable/icon_qa_normal"
+                        style="@style/my_item"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_marginLeft="@dimen/dimen_104px"
+                        android:background="#E5E5E5"/>
+
+                    <Button
+                        android:id="@+id/btn_my_order"
+                        android:text="我的订单"
+                        android:drawablePadding="@dimen/dimen_10px"
+                        android:drawableLeft="@drawable/icon_order_normal"
+                        style="@style/my_item"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_marginLeft="@dimen/dimen_104px"
+                        android:background="#E5E5E5"/>
+
+                    <Button
+                        android:id="@+id/btn_my_collect"
+                        android:text="我的收藏"
+                        android:drawablePadding="@dimen/dimen_10px"
+                        android:drawableLeft="@drawable/wu_collect"
+                        style="@style/my_item"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_marginLeft="@dimen/dimen_104px"
+                        android:background="#E5E5E5"/>
+
+                    <Button
+                        android:id="@+id/btn_my_coin"
+                        android:text="我的兑换券"
+                        android:drawablePadding="@dimen/dimen_10px"
+                        android:drawableLeft="@drawable/wu_coin"
+                        style="@style/my_item"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_marginLeft="@dimen/dimen_104px"
+                        android:background="#E5E5E5"/>
+
+                    <Button
+                        android:id="@+id/btn_my_bag"
+                        android:text="邀请有奖"
+                        android:drawablePadding="@dimen/dimen_10px"
+                        android:drawableLeft="@drawable/wu_bag"
+                        style="@style/my_item"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_marginLeft="@dimen/dimen_104px"
+                        android:background="#E5E5E5"/>
+
+                    <Button
+                        android:id="@+id/btn_my_custom"
+                        android:text="我的客服"
+                        android:drawablePadding="@dimen/dimen_10px"
+                        android:drawableLeft="@drawable/icon_service_normal"
+                        style="@style/my_item"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_20px"
+                        android:background="#F5F5F5"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_list_set"
+                    android:background="@color/white">
+                    <Button
+                        android:id="@+id/btn_my_setting"
+                        android:text="设置"
+                        android:drawableLeft="@drawable/icon_set_normal"
+                        android:drawablePadding="@dimen/dimen_10px"
+                        style="@style/my_item"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_20px"
+                    android:background="#F5F5F5"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

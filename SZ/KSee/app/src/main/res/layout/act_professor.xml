@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_base_background">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_professor_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        junhsue:left_second_text="返回"
+        junhsue:left_second_visibility="visible"
+        junhsue:right_text="发布"
+        junhsue:right_visibility="visible"
+        junhsue:title_style="normal_txt" />
+
+    <TextView
+        android:id="@+id/tv_logo_msg"
+        style="@style/text_f_36_c8392a0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ab_professor_title"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:text="@string/ask_for_professor_title"
+        />
+
+    <TextView
+        android:id="@+id/tv_logo_msg_msg"
+        style="@style/text_f_36_c8392a0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ask_for_professor_msg"
+        android:textSize="@dimen/f_28"
+        android:textColor="@color/c_gray_b7bcc1"
+        android:lineSpacingMultiplier="0.9"
+        android:lineSpacingExtra="@dimen/dimen_10px"
+        android:layout_below="@+id/tv_logo_msg"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:layout_marginTop="@dimen/dimen_10px"
+        android:visibility="visible"/>
+
+    <!--    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/pcfl_professor_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_logo_msg"
+            android:layout_marginTop="@dimen/dimen_24px"
+            junhsue:ptr_duration_to_close="200"
+            junhsue:ptr_duration_to_close_header="1000"
+            junhsue:ptr_keep_header_when_refresh="true"
+            junhsue:ptr_pull_to_fresh="false"
+            junhsue:ptr_ratio_of_header_height_to_refresh="1.2"
+            junhsue:ptr_resistance="1.7">-->
+
+    <ListView
+        android:id="@+id/lv_professors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_logo_msg_msg"
+        android:layout_marginTop="@dimen/dimen_36px"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none"></ListView>
+    <!--   </in.srain.cube.views.ptr.PtrClassicFrameLayout>-->
+
+</RelativeLayout>

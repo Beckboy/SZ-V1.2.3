@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/act_account_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_my_accountManager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:left_second_text="返回"
+        junhsue:left_second_visibility="visible"
+        junhsue:title="账号管理"
+        junhsue:title_style="normal_txt" />
+
+    <RelativeLayout
+        android:id="@+id/rl_my_accountManager_name"
+        style="@style/my_editordata_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textColor="#3C4350"
+            android:textSize="@dimen/f_36" />
+
+        <TextView
+            android:id="@+id/tv_accountManager_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#9DA1A7"
+            android:textSize="@dimen/f_30" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/my_setting_line_E5E5E5"
+        android:layout_marginLeft="@dimen/dimen_30px" />
+
+    <RelativeLayout
+        android:id="@+id/rl_my_accountManager_phonenumber"
+        style="@style/my_editordata_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码"
+            android:textColor="#3C4350"
+            android:textSize="@dimen/f_36" />
+
+        <TextView
+            android:id="@+id/tv_accountManager_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#9DA1A7"
+            android:textSize="@dimen/f_30" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/my_setting_line_E5E5E5"
+        android:layout_marginLeft="@dimen/dimen_30px" />
+
+    <RelativeLayout
+        android:id="@+id/rl_my_accountManager_resetPassword"
+        style="@style/my_editordata_item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置密码"
+            android:textColor="#3C4350"
+            android:textSize="@dimen/f_36" />
+
+        <TextView
+            android:id="@+id/tv_accountManager_resetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/icon_in_normal"
+            android:gravity="center_vertical"
+            android:textColor="#9DA1A7"
+            android:textSize="@dimen/f_30" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/my_setting_line_E5E5E5"
+        android:layout_marginLeft="@dimen/dimen_30px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_my_accountManager_sina"
+            style="@style/my_editordata_item">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新浪微博"
+                android:textColor="#3C4350"
+                android:textSize="@dimen/f_36" />
+
+            <TextView
+                android:id="@+id/tv_accountManager_sina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/icon_in_normal"
+                android:gravity="center_vertical"
+                android:text="未完善"
+                android:textColor="#9DA1A7"
+                android:textSize="@dimen/f_30" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/my_setting_line_E5E5E5"
+            android:layout_marginLeft="@dimen/dimen_30px" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_accountManager_weixin"
+            style="@style/my_editordata_item">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信"
+                android:textColor="#3C4350"
+                android:textSize="@dimen/f_36" />
+
+            <TextView
+                android:id="@+id/tv_accountManager_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/icon_in_normal"
+                android:gravity="center_vertical"
+                android:text="未绑定"
+                android:textColor="#9DA1A7"
+                android:textSize="@dimen/f_30" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/my_setting_line_E5E5E5"
+            android:layout_marginLeft="@dimen/dimen_30px" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_accountManager_QQ"
+            style="@style/my_editordata_item">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QQ"
+                android:textColor="#3C4350"
+                android:textSize="@dimen/f_36" />
+
+            <TextView
+                android:id="@+id/tv_accountManager_QQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/icon_in_normal"
+                android:gravity="center_vertical"
+                android:text="未绑定"
+                android:textColor="#9DA1A7"
+                android:textSize="@dimen/f_30" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/my_setting_line_E5E5E5"
+            android:layout_marginLeft="@dimen/dimen_30px" />
+
+    </LinearLayout>
+
+</LinearLayout>

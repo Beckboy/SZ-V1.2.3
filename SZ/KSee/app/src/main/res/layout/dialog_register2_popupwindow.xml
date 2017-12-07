@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="@dimen/dimen_40px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_pop_btn"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pop_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拍照"
+            android:textColor="#3C4350"
+            android:textSize="@dimen/f_34"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_50px"
+            android:paddingBottom="@dimen/dimen_26px"
+            android:clickable="true"
+            android:onClick="onclick"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--style="@style/line_2_120_E2D7CC"/>-->
+
+        <TextView
+            android:id="@+id/pop_local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从相册中选取"
+            android:textColor="#3C4350"
+            android:textSize="@dimen/f_34"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_24px"
+            android:paddingBottom="@dimen/dimen_50px"
+            android:clickable="true"
+            android:onClick="onclick"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30px"
+        android:background="#F5F5F5"/>
+
+    <Button
+        android:id="@+id/pop_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textColor="#3C4350"
+        android:textSize="@dimen/f_34"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_40px"
+        android:paddingBottom="@dimen/dimen_40px"
+        android:background="@drawable/shape_bg_pop_btn"
+        android:onClick="onclick"/>
+
+</LinearLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.junhsue.ksee.SendPostActivity">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_post_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:left_second_visibility="visible"
+        junhsue:right_img_one="@drawable/icon_hint"
+        junhsue:right_visibility="invisible"
+        junhsue:title="发布帖子"
+        junhsue:title_style="normal_img" />
+
+    <LinearLayout
+        android:id="@+id/ll_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100px"
+            android:paddingTop="@dimen/dimen_20px"
+            android:paddingBottom="@dimen/dimen_20px"
+            android:paddingLeft="@dimen/dimen_30px"
+            android:paddingRight="@dimen/dimen_40px"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="即将发布到圈子"
+                android:textSize="@dimen/f_28"
+                android:textColor="@color/c_gray_aebdcd"
+                />
+
+            <TextView
+                android:id="@+id/tv_post_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_28"
+                android:textColor="@color/c_black_54617a"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_20px"
+                android:paddingRight="@dimen/dimen_20px"
+                android:paddingTop="@dimen/dimen_2px"
+                android:paddingBottom="@dimen/dimen_2px"
+                android:layout_marginLeft="@dimen/dimen_10px"
+                android:background="@drawable/xiangmujingxuan"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"/>
+
+            <CheckBox
+                android:id="@+id/cb_post_anonymous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_bg_check_anonymous"
+                android:background="@null"
+                android:checked="false"
+                android:paddingLeft="@dimen/dimen_10px"
+                android:text="匿名"
+                android:textSize="@dimen/f_28"
+                android:textColor="@color/c_black_54617a" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_post_send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100px"
+            android:background="#FFC84A"
+            android:gravity="center"
+            android:clickable="true">
+            <TextView
+                android:id="@+id/tv_post_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布"
+                android:textSize="@dimen/f_40"
+                android:textColor="@color/white"
+                android:paddingRight="@dimen/dimen_10px"
+                android:drawableRight="@drawable/icon_next_white"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scr_post_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:scrollbars="none"
+        android:layout_above="@+id/ll_post"
+        android:layout_below="@+id/ab_post_title">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_30px"
+            android:paddingTop="@dimen/dimen_30px"
+            android:paddingBottom="@dimen/dimen_6px"
+            android:background="@color/white">
+            <EditText
+                android:id="@+id/ed_post_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入5-30字的标题"
+                android:maxLength="30"
+                android:background="@null"
+                android:textSize="@dimen/f_34"
+                android:textColor="@color/c_black_55626e"
+                android:textColorHint="@color/c_gray_aebdcd"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:layout_marginRight="@dimen/dimen_30px"
+                android:layout_marginLeft="@dimen/dimen_30px"/>
+
+            <TextView
+                android:id="@+id/tv_post_title_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30字"
+                android:textSize="@dimen/f_22"
+                android:textColor="@color/c_gray_aebdcd"
+                android:layout_below="@+id/ed_post_title"
+                android:layout_alignRight="@+id/ed_post_title"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_40px"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ed_post_des"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:hint="有疑问想寻求大咖解答？还是想谈谈自己的见解和看法？都在这里说说吧......"
+                android:background="@null"
+                android:textSize="@dimen/f_34"
+                android:textColor="@color/c_black_55626e"
+                android:textColorHint="@color/c_gray_aebdcd"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:lineSpacingMultiplier="0.9"
+                android:lineSpacingExtra="15px"
+                android:layout_marginRight="@dimen/dimen_30px"
+                android:layout_marginLeft="@dimen/dimen_30px"
+                android:paddingBottom="@dimen/dimen_78px"/>
+
+            <com.junhsue.ksee.view.SendPostImageView
+                android:id="@+id/multiImagView_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_30px"
+                android:layout_marginLeft="@dimen/dimen_30px"
+                android:layout_marginBottom="@dimen/dimen_40px">
+            </com.junhsue.ksee.view.SendPostImageView>
+
+            <LinearLayout
+                android:id="@+id/ll_post_circlelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30px"
+                    android:background="@color/c_gray_f5"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请选择要发布的圈子"
+                    android:textSize="@dimen/f_30"
+                    android:textColor="@color/c_gray_aebdcd"
+                    android:paddingRight="@dimen/dimen_30px"
+                    android:paddingLeft="@dimen/dimen_30px"
+                    android:layout_marginTop="@dimen/dimen_40px"/>
+                <com.junhsue.ksee.view.FlowLayout
+                    android:id="@+id/flowlayout_post_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/dimen_30px"
+                    android:paddingLeft="@dimen/dimen_30px"
+                    android:paddingBottom="@dimen/dimen_20px">
+                </com.junhsue.ksee.view.FlowLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_post_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_20px"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:clickable="true">
+                    <ImageView
+                        android:id="@+id/img_post_button"
+                        android:layout_width="@dimen/dimen_50px"
+                        android:layout_height="@dimen/dimen_50px"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/icon_post_close"/>
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/img_post_load_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dimen_20px"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:background="@drawable/selector_btn_try_again"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_20px"
+        android:layout_below="@+id/ab_post_title"
+        android:background="@drawable/icon_bar_top_shadow" />
+
+</RelativeLayout>

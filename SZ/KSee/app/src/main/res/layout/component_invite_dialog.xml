@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_40px"
+        android:layout_marginRight="@dimen/dimen_40px"
+        android:background="@drawable/bg_concer_50px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_60px"
+            android:lineSpacingExtra="15px"
+            android:lineSpacingMultiplier="0.9"
+            android:text="·· 小钬花儿温馨提示 ··"
+            android:textColor="@color/c_gray_95a3b1"
+            android:textSize="@dimen/f_24" />
+
+        <TextView
+
+            android:id="@+id/tv_version_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_124px"
+            android:gravity="center"
+            android:lineSpacingExtra="15px"
+            android:lineSpacingMultiplier="0.9"
+            android:text="@string/invite_no_coupon"
+            android:textColor="@color/c_black_54617a"
+            android:textSize="@dimen/f_34" />
+
+        <LinearLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/tv_version_hint"
+            android:layout_marginBottom="@dimen/dimen_20px"
+            android:layout_marginTop="@dimen/dimen_36px">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40" />
+
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="256"
+                android:background="@drawable/update_no"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="不了,谢谢"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_36" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="24" />
+
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="256"
+                android:background="@drawable/update_yes"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="立即邀请"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f_36" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

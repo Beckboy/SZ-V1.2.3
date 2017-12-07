@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_msg_card"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="@dimen/common_padding">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50px"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/img_tag"
+            android:layout_width="@dimen/dimen_50px"
+            android:layout_height="@dimen/dimen_50px"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_msg_colleage" />
+
+        <TextView
+            android:id="@+id/txt_tag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10px"
+            android:layout_toRightOf="@id/img_tag"
+            android:text="课程"
+            android:textColor="@color/c_yellow_cdac8d"
+            android:textSize="@dimen/commmon_font_size_small" />
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_50px"
+                android:layout_height="@dimen/dimen_50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_msg_more" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_30px"
+        android:layout_marginTop="@dimen/dimen_30px">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/img_default_course_system"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/txt_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_30px"
+            android:layout_toRightOf="@id/img"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="课程"
+            android:textColor="@color/c_black_3c4350"
+            android:textSize="@dimen/font_size_15sp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_live_status_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img"
+            android:layout_alignLeft="@id/txt_course_title"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_status_tag"
+                android:layout_width="@dimen/dimen_22px"
+                android:layout_height="@dimen/dimen_22px"
+                android:src="@drawable/icon_msg_live_tag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10px"
+                android:text="购买课程"
+                android:textColor="@color/c_yellow_cdac8d"
+                android:textSize="@dimen/common_font_size_normal" />
+
+            <LinearLayout
+                android:id="@+id/ll_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_30px"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="@color/c_red_ef5329"
+                    android:textSize="@dimen/font_size_15sp" />
+
+                <TextView
+                    android:id="@+id/txt_course_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10px"
+                    android:text="99"
+                    android:textColor="@color/c_red_ef5329"
+                    android:textSize="@dimen/font_size_15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txt_course_title"
+            android:layout_below="@id/txt_course_title"
+            android:layout_marginBottom="@dimen/dimen_10px"
+            android:layout_marginTop="@dimen/dimen_20px"
+            android:text="城市: ShangHai"
+            android:textColor="@color/c_gray_999"
+            android:textSize="@dimen/common_font_size_normal" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

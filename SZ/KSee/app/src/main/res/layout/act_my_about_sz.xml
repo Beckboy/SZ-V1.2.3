@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/act_my_about_sz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.junhsue.ksee.MyAboutSZActivity">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/title_about_sz_server"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:title="关于钬花"
+        junhsue:title_style="normal_img" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_20px"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_20px"
+            android:background="@drawable/icon_bar_top_shadow"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scr_list_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/page_base_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/img_load_code"
+                    android:layout_width="@dimen/dimen_280px"
+                    android:layout_height="@dimen/dimen_280px"
+                    android:layout_marginTop="@dimen/dimen_60px"
+                    android:background="@drawable/load_code"/>
+
+                <TextView
+                    android:id="@+id/tv_cur_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/f_26"
+                    android:textColor="@color/c_black_55626e"
+                    android:layout_marginTop="@dimen/dimen_16px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（长按二维码就可以把钬花分享给好友哟～）"
+                    android:textSize="@dimen/f_26"
+                    android:textColor="@color/c_gray_aebdcd"
+                    android:layout_marginTop="@dimen/dimen_8px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="钬花教育社区\n教育行业钬钬钬(huǒ)的社区型APP\n100000+教育人的知识共享平台\n及沟通交流社区。\n\n做教育，也要那么潮！\n加入钬花，不仅要玩，还要一起玩！"
+                    android:textColor="@color/c_black_55626e"
+                    android:textSize="@dimen/f_26"
+                    android:lineSpacingExtra="@dimen/dimen_15px"
+                    android:lineSpacingMultiplier="0.9"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_40px"
+                    android:layout_marginBottom="@dimen/dimen_60px"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_30px"
+                android:paddingRight="@dimen/dimen_30px"
+                android:layout_marginBottom="@dimen/dimen_40px"
+                android:layout_marginTop="@dimen/dimen_30px"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/ll_new_version_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_100px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/dimen_50px"
+                        android:layout_height="@dimen/dimen_50px"
+                        android:background="@drawable/about_update"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="新版介绍"
+                        android:textSize="@dimen/f_32"
+                        android:textColor="@color/c_black_55626e"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_red_circle"
+                        android:layout_width="@dimen/dimen_16px"
+                        android:layout_height="@dimen/dimen_16px"
+                        android:visibility="gone"
+                        android:background="@drawable/shape_circle_red"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20px"
+                        android:background="@drawable/icon_in_normal"/>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/my_setting_line_E5E5E5"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_hide_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_100px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/dimen_50px"
+                        android:layout_height="@dimen/dimen_50px"
+                        android:background="@drawable/about_update"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="服务协议"
+                        android:textSize="@dimen/f_32"
+                        android:textColor="@color/c_black_55626e"
+                        android:drawableRight="@drawable/icon_in_normal"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_48px"
+        android:background="@drawable/shape_rec_radius_5dp_fff"
+        android:layout_margin="@dimen/dimen_60px"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_bind_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示"
+            android:textSize="@dimen/f_36"
+            android:textColor="#2C3239"
+            android:paddingLeft="@dimen/dimen_40px"
+            android:paddingRight="@dimen/dimen_40px"/>
+
+        <TextView
+            android:id="@+id/tv_bind_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统检测到该手机号已经注册过钬花，关联手机号有助于我们更好为您服务，或选择“暂不关联”填写其他手机号进行关联。"
+            android:textSize="@dimen/f_30"
+            android:textColor="#2C3239"
+            android:layout_below="@+id/tv_bind_title"
+            android:layout_marginTop="@dimen/dimen_26px"
+            android:paddingLeft="@dimen/dimen_40px"
+            android:paddingRight="@dimen/dimen_40px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_88px"
+            android:layout_below="@+id/tv_bind_content"
+            android:layout_marginTop="@dimen/dimen_96px">
+            <Button
+                android:id="@+id/btn_bind_cancle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_rec_bind_cancle"
+                android:text="暂不关联"
+                android:textSize="@dimen/f_30"
+                android:textColor="#343A44"
+                android:onClick="onclick"/>
+            <Button
+                android:id="@+id/btn_bind_true"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="立即关联"
+                android:textSize="@dimen/f_30"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_rec_radius_5dp_cdac8d"
+                android:onClick="onclick"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

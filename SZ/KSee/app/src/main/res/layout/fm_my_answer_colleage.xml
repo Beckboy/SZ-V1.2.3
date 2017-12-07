@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptrClassicFrameLayout_mycolleage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/page_base_background"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+            <ListView
+                android:id="@+id/lv_myanswer_mycolleage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:headerDividersEnabled="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                ></ListView>
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <View
+        android:id="@+id/v_mycolleage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_8px"
+        android:layout_centerInParent="true"/>
+
+
+    <com.junhsue.ksee.view.CircleImageView
+        android:id="@+id/img_mycolleage_nodata"
+        android:layout_width="@dimen/dimen_320px"
+        android:layout_height="@dimen/dimen_320px"
+        android:src="@drawable/wu_def_collection"
+        android:layout_above="@+id/v_mycolleage"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_mycolleage_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_f_28_b0"
+        android:text="你还没有任何收藏哦"
+        android:layout_marginTop="@dimen/dimen_42px"
+        android:layout_below="@+id/v_mycolleage"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_mycolleage_reloading"
+        android:layout_width="@dimen/dimen_266px"
+        android:layout_height="@dimen/dimen_76px"
+        android:text="重新加载"
+        android:textColor="@color/c_yellow_cdac8d"
+        android:textSize="@dimen/f_30"
+        android:layout_below="@+id/tv_mycolleage_nodata"
+        android:layout_marginTop="@dimen/dimen_100px"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/shape_bg_no_net"
+        android:visibility="gone"/>
+
+</RelativeLayout>

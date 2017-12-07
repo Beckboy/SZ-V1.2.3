@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10px"
+            android:paddingTop="@dimen/dimen_40px"
+            android:paddingLeft="@dimen/dimen_40px"
+            android:paddingRight="@dimen/dimen_40px"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公告"
+                android:textSize="@dimen/f_30"
+                android:textColor="@color/c_black_55626e"/>
+            <CheckBox
+                android:id="@+id/cb_title_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="收起"
+                android:textSize="@dimen/f_26"
+                android:textColor="@color/c_gray_aebdcd"
+                android:button="@null"
+                android:background="@null"
+                android:drawablePadding="@dimen/dimen_10px"
+                android:drawableRight="@drawable/selector_bg_check_open_small"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_title_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/f_28"
+            android:textColor="@color/c_gray_95a3b1"
+            android:lineSpacingMultiplier="0.9"
+            android:lineSpacingExtra="10px"
+            android:paddingLeft="@dimen/dimen_40px"
+            android:paddingRight="@dimen/dimen_40px"
+            android:paddingBottom="@dimen/dimen_40px" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30px"
+            android:background="@color/page_base_background"/>
+    </LinearLayout>
+</RelativeLayout>

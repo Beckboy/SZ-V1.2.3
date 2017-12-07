@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_4px">
+
+        <ImageView
+            android:id="@+id/iv_video_poster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_video_play"
+            android:layout_width="@dimen/dimen_110px"
+            android:layout_height="@dimen/dimen_110px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_100px"
+            android:background="@drawable/icon_home_content_video_play" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_video_title"
+                style="@style/text_f_36_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_30px"
+                android:layout_marginLeft="@dimen/dimen_30px"
+                android:layout_marginRight="@dimen/dimen_30px"
+                android:ellipsize="end"
+                android:maxLines="2" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

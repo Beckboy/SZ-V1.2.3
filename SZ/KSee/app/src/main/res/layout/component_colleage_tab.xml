@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:background="@color/actionbar_base_background"
+    android:orientation="horizontal"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+
+    <TextView
+        android:id="@+id/txt_live"
+        style="@style/colleage_tab_style"
+        android:text="@string/common_live" />
+
+    <TextView
+        android:id="@+id/txt_course"
+        style="@style/colleage_tab_style"
+        android:text="@string/common_course" />
+
+    <TextView
+        android:id="@+id/txt_activities"
+        style="@style/colleage_tab_style"
+        android:text="@string/common_activities"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_classroom"
+        style="@style/colleage_tab_style"
+        android:text="@string/common_classroom" />
+
+
+</LinearLayout>

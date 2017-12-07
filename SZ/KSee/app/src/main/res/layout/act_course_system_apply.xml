@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_base_background"
+    android:orientation="vertical">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:background="@color/white"
+        app:center_title_text_style="@style/text_36_c_gray_242e42"
+        app:left_first_image="@drawable/icon_live_back"
+        app:left_first_visibility="visible"
+        app:left_second_text="返回"
+        app:right_img_one="@drawable/selector_share"
+        app:title="确认信息"
+        app:title_style="normal_img" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.junhsue.ksee.view.OrderAddressView
+            android:id="@+id/order_address_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.junhsue.ksee.view.OrderInfoView
+            android:id="@+id/order_info_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20px"
+            app:goods_number_small_visible="false"
+            app:goods_number_unit_visible="true"
+            app:goods_price_visible="false"
+            app:total_price_visible="false" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/c_yellow_cdac8d"
+            android:text="@string/msg_confrim_apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_font_size_normal" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_confirm"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="份数"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/commmon_font_size_small" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

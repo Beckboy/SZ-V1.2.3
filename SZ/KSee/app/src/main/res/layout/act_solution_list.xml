@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/action_bar_solution_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        app:background="@color/white"
+        app:left_first_image="@drawable/icon_arrow_left_black"
+        app:left_first_visibility="visible"
+        app:title="@string/msg_solution_list"
+        app:title_style="normal_img" />
+
+
+    <ExpandableListView
+        android:id="@+id/expandableb_list_view_solution_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transent"
+        android:scrollbars="none"
+        android:groupIndicator="@null"
+        android:divider="@null" />
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_share_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20px"
+        android:layout_marginRight="@dimen/dimen_20px"
+        android:background="@drawable/shape_solid_white_corner_14px"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_60px"
+        android:paddingTop="@dimen/dimen_60px">
+        <!-- 好友-->
+        <LinearLayout
+            android:id="@+id/ll_share_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tv_test"
+                android:layout_width="@dimen/dimen_100px"
+                android:layout_height="@dimen/dimen_100px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_share_friend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10px"
+                android:text="@string/share_friend"
+                android:textColor="@color/c_black_55626e"
+                android:textSize="@dimen/f_24" />
+
+        </LinearLayout>
+        <!--朋友圈-->
+        <LinearLayout
+            android:id="@+id/ll_share_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_100px"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_100px"
+                android:layout_height="@dimen/dimen_100px"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_share_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10px"
+                android:text="@string/share_circle"
+                android:textColor="@color/c_black_55626e"
+                android:textSize="@dimen/f_24" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100px"
+        android:layout_marginBottom="@dimen/dimen_30px"
+        android:layout_marginLeft="@dimen/dimen_20px"
+        android:layout_marginRight="@dimen/dimen_20px"
+        android:layout_marginTop="@dimen/dimen_30px"
+        android:background="@drawable/shape_solid_white_corner_14px"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/c_yellow_ffc84a"
+        android:textSize="@dimen/f_34" />
+</LinearLayout>
+
+

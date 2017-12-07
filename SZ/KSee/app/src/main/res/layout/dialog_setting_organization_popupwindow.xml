@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dimen_50px"
+    android:paddingRight="@dimen/dimen_50px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_radiobutton">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_122px"
+            android:text="职务"
+            android:textColor="#2C3239"
+            android:textSize="@dimen/f_42"
+            android:gravity="center"
+            android:background="@drawable/shape_rec_radius_5dp_fff"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_2px"
+            android:background="#F5F5F5"/>
+
+        <com.junhsue.ksee.view.WheelView
+            android:id="@+id/wheel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_2px"
+            android:background="#F5F5F5"/>
+
+        <Button
+            android:id="@+id/pop_organization_true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_96px"
+            android:text="完  成"
+            android:textColor="#59B197"
+            android:textSize="@dimen/f_34"
+            android:textStyle="bold|normal"
+            android:onClick="onclick"
+            android:background="@drawable/shape_rec_radius_5dp_fff"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

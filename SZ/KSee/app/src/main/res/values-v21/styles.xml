@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="myTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/transent</item>
+        <item name="colorPrimaryDark">@color/actionbar_base_background</item>
+        <item name="colorAccent">@color/transent</item>
+    </style>
+
+    <style name="splashTheme" parent="myTheme">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+</resources>

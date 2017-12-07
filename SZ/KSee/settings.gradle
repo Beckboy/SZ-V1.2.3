@@ -1,0 +1,2 @@
+include ':app', ':ptr-lib', ':Three_levels_library', ':polyvAndroidSDKGif1.0', ':polyv-live-sdk', ':magicindicator'
+include ':easeUI_CN'

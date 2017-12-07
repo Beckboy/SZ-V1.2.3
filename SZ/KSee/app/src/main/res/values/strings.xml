@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">钬花教育社区</string>
+
+    <string name="common_knowledge">识</string>
+    <string name="common_realize">知</string>
+    <string name="common_social_circle">社</string>
+    <string name="common_colleage">塾</string>
+    <string name="common_my_space">吾</string>
+    <!--大家在相应负责模块添加string, 可以减少冲突-->
+
+    <!-- 自动登录失败提示文字 -->
+    <string name="autologin_fail_popupwindow">您的登录已超时 请重新登录</string>
+
+    <!--社板块-->
+    <string name="greatest_question">精选问题</string>
+    <string name="browse_all_greatest">查看全部精选</string>
+
+    <string name="data_load_completed">数据全部加载完毕</string>
+    <string name="search_question_hint">搜索你感兴趣的问题</string>
+    <string name="search">搜索</string>
+    <string name="answer_edit_hint">请写下你的留言</string>
+    <string name="please_write_question">请写下问题标题</string>
+    <string name="please_write_description">请写下问题相关描述</string>
+    <string name="please_select_topic">请选择一个话题</string>
+    <string name="ask_for_professor_title">邀请Ta回答</string>
+    <string name="ask_for_professor_count">(请选择1~3人)</string>
+    <string name="ask_for_professor_msg">下面是系统推荐擅长该话题的小伙伴，邀请3位获得解答的概率大增！</string>
+
+    <!--登录注册板块-->
+    <string name="register1_hint">Let is create your profile by adding a picture of you.</string>
+    <string name="register2_hint">Let is create your profile by adding a picture of you.</string>
+    <string name="resetpassword1_hint">Let is create your profile by adding a picture of you.</string>
+    <string name="resetpassword2_hint">Let is create your profile by adding a picture of you.</string>
+
+    <!--吾版块-->
+    <string name="feedback_edit_hint">请写下您的意见或建议</string>
+    <string name="version_update">钬花系统已更新，\n快去下载获取更好的体验吧</string>
+    <string name="invite_no_coupon">您目前暂无兑换券可用哦\n邀请好友注册领取兑换券吧!</string>
+
+    <!--我的问答-->
+    <string name="common_myinvite">邀请</string>
+    <string name="common_question">我提问的</string>
+    <string name="common_collection">收藏</string>
+
+    <!--塾板块-->
+    <string name="common_course">线下课</string>
+    <string name="common_live">直播</string>
+    <string name="common_activities">活动</string>
+    <string name="common_classroom">教室</string>
+
+    <string name="hint_order_info">完善个人资料有助于我们更好的了解你</string>
+    <string name="msg_goods_number_limit">您只能购买一场直播哦</string>
+    <string name="msg_order_pay_ok">交易成功</string>
+    <string name="msg_order_pay_no">待支付</string>
+    <string name="msg_order_pay_close">交易关闭</string>
+    <string name="msg_confrim_apply">确认报名</string>
+    <string name="msg_course_system_apply_number">共%s人</string>
+    <string name="msg_apply_success">恭喜你申请成功!</string>
+    <string name="msg_apply_hint"></string>
+    <string name="msg_sign_up_immediately">立即报名</string>
+    <string name="msg_approval_count" formatted="false">%s 人喜欢</string>
+
+    <string name="msg_pay_fail">支付失败</string>
+    <string name="msg_pay_network_timeout">支付网络连接错误啦</string>
+    <string name="msg_order_pay_result_hint">订单详情可在个人中心里面查阅,%s开始之前会在首页再次通知您</string>
+    <string name="msg_o_pay_result_hint">报名详情可在个人中心里面查阅,课程咨询师会再次联系你</string>
+
+
+    <!-- 教室 -->
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_prefix">[语音]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="video_call">[视频通话]</string>
+    <string name="dynamic_expression">[动态表情]</string>
+
+    <string name="release">发布</string>
+    <string name="msg_activity_conmment_empty">还未填写评论</string>
+    <string name="msg_activity_comment_push_success">发表成功</string>
+    <string name="msg_activies_end_time_show">截止日期:  %s</string>
+    <string name="msg_activies_dead_time_show">报名截止:  %s</string>
+    <string name="msg_activies_address">活动地点:  %s</string>
+    <string name="voice_length">"%s\'\'"</string>
+    <!--分享-->
+    <string name="share_msg">分享到</string>
+    <string name="share_msg_now">·· 立即分享到 ··</string>
+    <string name="share_friend">微信好友</string>
+    <string name="share_circle">微信朋友圈</string>
+    <string name="cancel_all">取消</string>
+    <string name="msg_confirm">确定</string>
+
+    <string name="msg_voice_start_record">按住开始录音</string>
+    <string name="msg_voice_stop_record">松开停止录音</string>
+
+    <string name="msg_question_title">你相关的问答有了新的动态</string>
+    <string name="msg_question_reply">邀请你回答问题</string>
+
+    <string name="msg_question_reply_title" formatted="false">%s等%s人喝了杯咖啡,思考再三,回答了你的问题</string>
+    <string name="msg_question_reply_title_people_single" formatted="false">%s喝了杯咖啡,思考再三,回答了你的问题</string>
+    <string name="msg_question_invite_title" formatted="false">%s请你去喝杯茶,想向你请教了一个问题</string>
+    <string name="msg_question_favoutite_repley_people_single" formatted="false">回答了你关注问题</string>
+    <string name="msg_question_favoutite_reply" formatted="false">等%s人回答了你关注问题</string>
+    <string name="msg_question_favorite">有人对你的回答赞不绝口，想拜你为师，快去看看</string>
+    <string name="msg_quesion_favorite_part_content">赞了你回答的问题</string>
+    <string name="msg_question_favorite__part_content_single">等%s人赞了你回答的问题</string>
+    <string name="msg_question_invite">%s请你去杯茶,想向你请教了一个问题</string>
+    <string name="msg_question_release_people_single" formatted="false">回答了你发布的问题</string>
+    <string name="msg_question_release" formatted="false">等%s人回答了你发布的问题</string>
+    <string name="msg_msg_activity_date_end">截止日期: %s</string>
+    <string name="msg_msg_activity_date_start" formatted="false">活动开始日期: %s</string>
+    <string name="msg_classroom">你加入了教室《%s》,快去看看大家吧</string>
+    <string name="msg_live_start_time">直播时间: %s</string>
+    <string name="msg_course_new">《%s》课程全新发布,快去看看吧</string>
+    <string name="msg_course_start_time" formatted="false">《%s》还有%s天就要开课了,请提前做好准备</string>
+    <string name="msg_course_list">当月课程表已更新,扛起小板凳看看都有哪些吧</string>
+    <string name="msg_search_result">抱歉,没有搜索到相关内容\n换个问题试试吧</string>
+    <string name="msg_answer_result">还没有大咖解答\n快来做第一个回答他的人吧!</string>
+    <string name="msg_answer_reply">请写下您的回答</string>
+    <string name="msg_receipt_notice">发票须知 </string>
+
+    <string name="msg_receipt_warning">1.收据只作为往来款项的凭据，不支持报销，如有报销需求请选择增值税发票\n2.书籍类商品暂不支持开具增值税发票\n3.发票开具最晚会在你课程结束后7-15个工作日后开具，请耐心等待</string>
+    <string name="msg_speaker">主讲人: %s</string>
+    <string name="msg_realize_article_read_number">%s次浏览</string>
+    <string name="msg_system_task_title">欢迎使用这么酷的钬花教育社区</string>
+    <string name="msg_system_task_content">你正在浏览的这个页面将会随着你的使用，推送更加适合您的内容。如果你想看干货文章、直播课、方案包、参与线下课等，请多多点击屏幕最下方的【知】【社】【塾】。</string>
+    <string name="msg_system_task_mark">在接下来的时间，我们会加速APP的开发迭代。更多新功能正在路上，敬请期待!\n点击右上角三点可关闭这张卡片，快去试试吧</string>
+
+    <string name="title_author_enter">作者入驻</string>
+    <string name="title_orz_enter">机构入驻</string>
+    <string name="live_apply_successful">报名成功</string>
+    <string name="live_apply_fail">报名失败</string>
+
+    <string name="live_no_permission">抱歉，该直播您没有观看权限</string>
+    <string name="solution_email_txt_input">请输入您接受方案包的邮箱</string>
+    <string name="solution_email_txt_select">请选择您的兑换券</string>
+    <string name="msg_solution_coupon_valid" formatted="false">有效期: %s 至 %s</string>
+    <string name="coupon">兑换券</string>
+    <string name="coupon_valid">已过期</string>
+    <string name="msg_coupon_empty">您暂无抵扣券,要快邀请好友获取吧!</string>
+    <string name="msg_coupon_no_data">喔~喔~,您暂无兑换券哦</string>
+    <string name="msg_coupon_no_seleted">您还没选择兑换券兑换哦</string>
+    <string name="msg_email_invalid">无效的邮箱</string>
+    <string name="msg_coupon_fail">此券无效,兑换失败</string>
+    <string name="msg_coupon_convert">立即兑换</string>
+    <string name="msg_solution_email_send_again">再次发送到邮箱</string>
+    <string name="msg_email_send_fail">您没发送成功~请重新再试</string>
+    <string name="msg_email_send_success">邮件发送成功,注意查收</string>
+
+    <string name="msg_solution_list">方案包列表</string>
+
+    <string name="msg_form_circle">来自圈子</string>
+    <string name="msg_circle_favourite">您关注的圈子将会出现在这里</string>
+    <string name="msg_report_edit_hint">请输入您的举报原因，不超过100个字符（必填项）</string>
+    <string name="msg_my_circle">我的圈子</string>
+    <string name="msg_second_post_comment_lines">更多%s条回复</string>
+    <string name="msg_post_comment_remind">发现一篇没有评论的帖子～\n快抢！沙发是你的了！</string>
+    <string name="msg_receive_favourite">收到的赞和收藏</string>
+    <string name="msg_receive_reply">收到的回复</string>
+    <string name="msg_notice">通知</string>
+    <string name="msg_approval_collect">目前还没有收到赞和收藏哦 ╮(╯▽╰)╭</string>
+    <string name="msg_post_no_data">该帖子不存在啦，\n去看看其他的帖子吧</string>
+    <string name="msg_nerwork_error">啊哦，网络异常，页面丢失啦\n点击刷新重试</string>
+    <string name="msg_center_noticle_posts_delete">很抱歉，您的帖子 [%s] 已被官方小钬花儿删除。Σ(っ°Д°;)っ删帖原因如下：</string>
+    <string name="msg_center_noticle_posts_hot">喜大普奔（づ￣3￣）づ╭～您的帖子 [%s] 已被官方小钬花儿加精，快去看看吧！
+        感谢您对于钬花的支持，期待您发布更多优质的帖子哦٩(๑>◡๑)۶ </string>
+
+</resources>

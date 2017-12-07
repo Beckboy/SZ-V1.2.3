@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../KSee.iml" filepath="$PROJECT_DIR$/../KSee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Three_levels_library/Three_levels_library.iml" filepath="$PROJECT_DIR$/../Three_levels_library/Three_levels_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../easeUI_CN/easeUI_CN.iml" filepath="$PROJECT_DIR$/../easeUI_CN/easeUI_CN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/../ptr-lib/ptr-lib.iml" />
+    </modules>
+  </component>
+</project>

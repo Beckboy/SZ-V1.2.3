@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/KSee.iml" filepath="$PROJECT_DIR$/KSee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Three_levels_library/Three_levels_library.iml" filepath="$PROJECT_DIR$/Three_levels_library/Three_levels_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easeUI_CN/easeUI_CN.iml" filepath="$PROJECT_DIR$/easeUI_CN/easeUI_CN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/magicindicator/magicindicator.iml" filepath="$PROJECT_DIR$/magicindicator/magicindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/polyv-live-sdk/polyv-live-sdk.iml" filepath="$PROJECT_DIR$/polyv-live-sdk/polyv-live-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/polyvAndroidSDKGif1.0/polyvAndroidSDKGif1.0.iml" filepath="$PROJECT_DIR$/polyvAndroidSDKGif1.0/polyvAndroidSDKGif1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/ptr-lib/ptr-lib.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/v_top_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/c_gray_e5" />
+
+    <LinearLayout
+        android:id="@+id/ll_answer_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_88px"
+        android:layout_below="@+id/v_top_divider"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <!--文字回答-->
+        <RelativeLayout
+            android:id="@+id/rl_text_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_txt_answer"
+                android:layout_width="@dimen/dimen_44px"
+                android:layout_height="@dimen/dimen_44px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_btn_txt_answer"
+                android:focusable="false" />
+
+            <TextView
+                style="@style/text_f_36_c_cdac8d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_txt_answer"
+                android:text="文字回答"
+                android:textColor="@drawable/selector_action_bar_text_color" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_26px"
+            android:layout_marginTop="@dimen/dimen_26px"
+            android:background="@color/c_gray_e5" />
+
+        <!--语音回答-->
+        <RelativeLayout
+            android:id="@+id/rl_voice_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_voice_answer"
+                android:layout_width="@dimen/dimen_44px"
+                android:layout_height="@dimen/dimen_44px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_btn_voice_answer"
+                android:focusable="false" />
+
+            <TextView
+                style="@style/text_f_36_c_cdac8d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_voice_answer"
+                android:text="语音回答"
+                android:textColor="@drawable/selector_action_bar_text_color" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_below="@+id/ll_answer_button_layout"
+        android:background="@color/c_gray_e5" />
+
+</RelativeLayout>

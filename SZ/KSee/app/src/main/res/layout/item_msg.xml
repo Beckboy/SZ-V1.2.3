@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_commuity_background"
+    android:orientation="vertical">
+
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        app:left_first_image="@drawable/icon_live_back"
+        app:center_title_text_style="@style/text_36_c_gray_242e42"
+        app:left_first_visibility="visible"
+        android:background="@color/white"
+        app:left_second_text_color="@color/c_gray_242E42"
+        app:title="消息中心" />
+
+
+    <com.junhsue.ksee.view.MsgItemView
+        android:id="@+id/item_msg_favourite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_40px"
+        app:img="@drawable/icon_msg_favourite"
+        app:text="@string/msg_receive_favourite" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/common_padding"
+        android:layout_marginRight="@dimen/common_padding"
+        android:background="#D6E3F0" />
+
+
+    <com.junhsue.ksee.view.MsgItemView
+        android:id="@+id/item_msg_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:img="@drawable/icon_msg_item"
+        app:text="@string/msg_receive_reply" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/common_padding"
+        android:layout_marginRight="@dimen/common_padding"
+        android:background="#D6E3F0" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_msg_system_notice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_padding"
+        android:paddingRight="@dimen/common_padding">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_msg_system" />
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/msg_notice"
+            android:textColor="#55626E"
+            android:textSize="@dimen/common_font_size_medium" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+
+            <com.junhsue.ksee.view.CircleImageView
+                android:id="@+id/img_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_msg_notice_tag"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/icon_arrow_right_gray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

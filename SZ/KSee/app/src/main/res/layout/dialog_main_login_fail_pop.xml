@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dimen_50px"
+        android:layout_marginRight="@dimen/dimen_50px"
+        android:background="@drawable/shape_rec_radius_5dp_fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提示"
+            style="@style/f_36_2c3239"
+            android:layout_marginLeft="@dimen/dimen_40px"
+            android:layout_marginTop="@dimen/dimen_54px"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/autologin_fail_popupwindow"
+            style="@style/text_f_30_c_2c3239"
+            android:lineSpacingExtra="@dimen/dimen_6px"
+            android:layout_marginRight="@dimen/dimen_40px"
+            android:layout_marginLeft="@dimen/dimen_40px"
+            android:layout_marginTop="@dimen/dimen_26px"
+            />
+
+        <Button
+            android:id="@+id/btn_autologin_fail_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好的"
+            style="@style/text_f_28_1ab587"
+            android:padding="@dimen/dimen_20px"
+            android:layout_marginTop="@dimen/dimen_10px"
+            android:layout_marginRight="@dimen/dimen_20px"
+            android:layout_marginBottom="@dimen/dimen_30px"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

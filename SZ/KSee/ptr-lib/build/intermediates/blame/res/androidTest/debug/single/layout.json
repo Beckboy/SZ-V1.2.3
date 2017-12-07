@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/res/merged/androidTest/debug/layout/cube_ptr_simple_loading.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/layout/cube_ptr_simple_loading.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/res/merged/androidTest/debug/layout/cube_ptr_classic_default_header.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/layout/cube_ptr_classic_default_header.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/res/merged/androidTest/debug/layout/component_ptr_footer.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/layout/component_ptr_footer.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/res/merged/androidTest/debug/layout/cube_views_load_more_default_footer.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/ptr-lib/build/intermediates/bundles/debug/res/layout/cube_views_load_more_default_footer.xml"
+    }
+]

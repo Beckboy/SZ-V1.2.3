@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_base_background">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptrClassicFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/page_base_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+        <ScrollView
+            android:id="@+id/scroll_v_realize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/component_colleage_live"/>
+
+            <include layout="@layout/head_colleage_course"/>
+
+            <View
+                android:id="@+id/img_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20px"
+                android:background="@color/page_base_background" />
+
+            <TextView
+                android:id="@+id/tv_colleage_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="线下活动"
+                android:textColor="#343A44"
+                android:textSize="@dimen/f_36"
+                android:background="@color/white"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/dimen_30px"
+                android:paddingLeft="15dp"
+                android:textStyle="bold"/>
+
+            <com.junhsue.ksee.view.CommonListView
+                android:id="@+id/expandableb_List_View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null" />
+
+        </LinearLayout>
+        </ScrollView>
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</RelativeLayout>

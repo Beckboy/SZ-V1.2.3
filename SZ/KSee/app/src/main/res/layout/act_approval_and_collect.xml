@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_commuity_background">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_approval_and_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:right_text="全部已读"
+        junhsue:right_text_style="@style/text_f_28_c_black_55626e"
+        junhsue:right_visibility="visible"
+        junhsue:title="收到的赞和收藏"
+        junhsue:title_style="normal_txt" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/pcfl_approval_and_collect_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ab_approval_and_collect"
+        junhsue:ptr_duration_to_close="200"
+        junhsue:ptr_duration_to_close_header="1000"
+        junhsue:ptr_keep_header_when_refresh="true"
+        junhsue:ptr_pull_to_fresh="false"
+        junhsue:ptr_ratio_of_header_height_to_refresh="1.2"
+        junhsue:ptr_resistance="1.7">
+
+        <ListView
+            android:id="@+id/lv_approval_and_collect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/page_commuity_background"
+            android:divider="@color/transent"
+            android:dividerHeight="@dimen/dimen_30px"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_20px"
+        android:layout_below="@+id/ab_approval_and_collect"
+        android:background="@drawable/icon_bar_top_shadow" />
+
+
+</RelativeLayout>

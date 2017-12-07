@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_base_background">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_question_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_second_visibility="visible"
+        junhsue:right_img_two="@drawable/icon_collect_normal"
+        junhsue:left_second_text="返回"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:right_img_one="@drawable/icon_live_share"
+        junhsue:right_visibility="visible"
+        junhsue:title="问答详情"
+        junhsue:title_style="normal_img" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/pcfl_questions_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ab_question_detail_title"
+        junhsue:ptr_duration_to_close="200"
+        junhsue:ptr_duration_to_close_header="1000"
+        junhsue:ptr_keep_header_when_refresh="true"
+        junhsue:ptr_pull_to_fresh="false"
+        junhsue:ptr_ratio_of_header_height_to_refresh="1.2"
+        junhsue:ptr_resistance="2.0">
+
+        <ListView
+            android:id="@+id/lv_questions_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"></ListView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</RelativeLayout>

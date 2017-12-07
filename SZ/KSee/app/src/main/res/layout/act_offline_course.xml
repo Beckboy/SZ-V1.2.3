@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_offline_course_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:left_second_text="返回"
+        junhsue:left_second_visibility="visible"
+        junhsue:right_visibility="visible"
+        junhsue:title="线下活动"
+        junhsue:title_style="normal_img" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ab_offline_course_title"
+        android:layout_centerVertical="true"
+        junhsue:ptr_duration_to_close="200"
+        junhsue:ptr_duration_to_close_header="1000"
+        junhsue:ptr_keep_header_when_refresh="true"
+        junhsue:ptr_pull_to_fresh="false"
+        junhsue:ptr_ratio_of_header_height_to_refresh="1.2"
+        junhsue:ptr_resistance="1.7">
+
+        <com.junhsue.ksee.view.CommonListView
+            android:id="@+id/elv_offline_courses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null" />
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+
+</RelativeLayout>

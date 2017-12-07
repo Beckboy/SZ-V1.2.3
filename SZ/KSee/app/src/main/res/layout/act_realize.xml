@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:background="@color/page_base_background">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_realize_search_heard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        junhsue:background="@color/actionbar_base_background"
+        junhsue:left_first_image="@drawable/selector_btn_head_back"
+        junhsue:left_second_text="问"
+        junhsue:left_first_visibility="invisible"
+        junhsue:left_second_visibility="invisible"
+        junhsue:left_second_text_color="@color/actionbar_base_background"
+        junhsue:right_img_one="@drawable/selector_social_search"
+        junhsue:right_visibility="visible"
+        junhsue:title="百科"
+        junhsue:title_style="normal_img" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_plassic_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ab_realize_search_heard"
+        android:layout_centerVertical="true"
+        android:background="@color/page_base_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.3">
+    <ScrollView
+        android:id="@+id/scroll_v_realize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/scroll_h_realize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:id="@+id/ll_realize_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dimen_40px"
+                    android:paddingBottom="@dimen/dimen_40px"
+                    android:paddingLeft="@dimen/dimen_10px"
+                    android:paddingRight="@dimen/dimen_30px"
+                    android:visibility="gone"
+                    android:background="@color/white"
+                    >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_25px"
+            android:paddingTop="@dimen/dimen_25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 热门文章 -"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/common_font_size_normal" />
+
+            <com.junhsue.ksee.view.CommonListView
+                android:id="@+id/list_view_article_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_realize_author"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_180px"
+            android:layout_marginTop="@dimen/dimen_30px"
+            android:src="@drawable/img_realize_author" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_20px"
+            android:layout_marginTop="@dimen/dimen_30px"
+            android:background="@color/white" />
+
+        <com.junhsue.ksee.view.CommonListView
+            android:id="@+id/list_view_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null" />
+
+    </LinearLayout>
+    </ScrollView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+</RelativeLayout>

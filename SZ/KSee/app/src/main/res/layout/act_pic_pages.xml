@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.junhsue.ksee.PicPagesActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        junhsue:background="@color/actionbar_base_background"
+        junhsue:left_first_image="@drawable/selector_btn_head_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:left_second_text="      1/1"
+        junhsue:left_second_visibility="visible"
+        junhsue:right_img_one="@drawable/icon_delete"
+        junhsue:right_visibility="visible"
+        junhsue:title_style="normal_img" />
+
+</RelativeLayout>

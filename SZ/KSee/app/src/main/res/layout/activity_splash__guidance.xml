@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash__guidance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.junhsue.ksee.Splash_GuidanceActivity">
+
+    <VideoView
+        android:id="@+id/id_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_100px">
+
+        <TextView
+            android:id="@+id/txt_wel_login"
+            android:text="登录"
+            style="@style/f_40_wel"
+            android:background="@drawable/selector_splash_btn_jumpin"/>
+
+        <TextView
+            android:id="@+id/txt_wel_register"
+            android:text="注册"
+            style="@style/f_40_wel"
+            android:layout_toRightOf="@+id/txt_wel_login"
+            android:layout_marginLeft="@dimen/dimen_40px"
+            android:background="@drawable/selector_splash_btn_jumpin"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/start_page_slogan"
+        android:layout_marginTop="@dimen/dimen_200px"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

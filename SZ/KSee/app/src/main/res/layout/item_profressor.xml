@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_24px">
+
+    <RelativeLayout
+        android:id="@+id/rl_profess_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_180px"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:layout_marginRight="@dimen/dimen_30px">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:riv="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/dimen_180px"
+            android:layout_height="@dimen/dimen_180px"
+            android:scaleType="fitXY"
+            riv:riv_corner_radius_bottom_left="@dimen/dimen_14px"
+            riv:riv_corner_radius_top_left="@dimen/dimen_14px" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            style="@style/text_f_36_c_3c4350"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_30px"
+            android:layout_marginTop="@dimen/dimen_40px"
+            android:layout_toRightOf="@+id/iv_avatar" />
+
+        <TextView
+            android:id="@+id/tv_organization"
+            style="@style/text_f_28_c9da1a7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nickname"
+            android:layout_marginLeft="@dimen/dimen_30px"
+            android:layout_marginTop="@dimen/dimen_20px"
+            android:layout_toRightOf="@id/iv_avatar" />
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="@dimen/dimen_60px"
+            android:layout_height="@dimen/dimen_60px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_20px"
+            android:background="@drawable/icon_btn_selected"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

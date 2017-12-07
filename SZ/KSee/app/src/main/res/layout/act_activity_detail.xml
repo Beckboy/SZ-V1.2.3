@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        app:background="@color/white"
+        app:center_title_text_style="@style/text_36_c_gray_242e42"
+        app:left_first_image="@drawable/icon_live_back"
+        app:left_first_visibility="visible"
+        app:left_second_text="返回"
+        app:right_img_one="@drawable/icon_live_share"
+        app:right_visibility="visible"
+        app:title="活动"
+        app:title_style="normal_img" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_approval"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100px"
+            android:layout_weight="1"
+            android:background="@color/c_black_3c4350"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_approval_count"
+                style="@style/text_f_36_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0 人喜欢" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_approval_count"
+                android:gravity="center"
+                android:padding="@dimen/dimen_20px">
+
+                <ImageView
+                    android:id="@+id/iv_approval"
+                    android:layout_width="@dimen/dimen_60px"
+                    android:layout_height="@dimen/dimen_60px"
+                    android:background="@drawable/icon_like_hover"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            style="@style/text_f_36_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:background="@color/c_yellow_cdac8d"
+            android:gravity="center"
+            android:text="@string/msg_sign_up_immediately" />
+    </LinearLayout>
+
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptrClassicFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/ab_activity_title"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:background="@color/page_base_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <com.junhsue.ksee.view.MyScrollView
+            android:id="@+id/sv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.junhsue.ksee.view.WebPageView
+                    android:id="@+id/wv_activity_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_comment"
+                    android:orientation="vertical">
+
+                    <com.junhsue.ksee.view.CommonListView
+                        android:id="@+id/lv_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="@color/transent"
+                        android:listSelector="@color/transent" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.junhsue.ksee.view.MyScrollView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+    <ImageView
+        android:id="@+id/img_comment"
+        android:layout_width="@dimen/dimen_100px"
+        android:layout_height="@dimen/dimen_100px"
+        android:layout_above="@id/ll_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dimen_20px"
+        android:layout_marginRight="@dimen/common_padding"
+        android:src="@drawable/selector_comment" />
+
+</RelativeLayout>

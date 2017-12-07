@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_commuity_background">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_post_comment_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:right_img_one="@drawable/selector_share"
+        junhsue:title="评论详情"
+        junhsue:title_style="normal_img" />
+
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_pcf_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ab_post_comment_detail_title"
+        android:layout_marginBottom="@dimen/dimen_100px"
+        android:background="@color/page_base_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        junhsue:ptr_duration_to_close="200"
+        junhsue:ptr_duration_to_close_header="1000"
+        junhsue:ptr_keep_header_when_refresh="true"
+        junhsue:ptr_mode="both"
+        junhsue:ptr_pull_to_fresh="false"
+        junhsue:ptr_ratio_of_header_height_to_refresh="1.2"
+        junhsue:ptr_resistance="1.7">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ab_post_comment_detail_title">
+
+                <RelativeLayout
+                    android:id="@+id/rl_post_second_content_heard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <include
+                        android:id="@+id/rl_post_comment_list_heard"
+                        layout="@layout/component_post_comment_heard_info" />
+
+                    <TextView
+                        android:id="@+id/tv_post_comment_detail_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_post_comment_list_heard"
+                        android:layout_marginBottom="@dimen/dimen_40px"
+                        android:layout_marginLeft="@dimen/dimen_150px"
+                        android:layout_marginRight="@dimen/dimen_40px" />
+
+                    <View
+                        android:id="@+id/v_head_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_30px"
+                        android:layout_below="@+id/tv_post_comment_detail_content"
+                        android:background="@color/page_commuity_background"></View>
+                </RelativeLayout>
+
+                <com.junhsue.ksee.view.CommonListView
+                    android:id="@+id/lv_second_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rl_post_second_content_heard"
+                    android:cacheColorHint="@color/transent"
+                    android:divider="@color/white"
+                    android:overScrollMode="never"></com.junhsue.ksee.view.CommonListView>
+            </RelativeLayout>
+        </ScrollView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!--  <View
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.junhsue.ksee.view.CancelEditText
+                android:id="@+id/et_send_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10px"
+                android:layout_marginRight="@dimen/dimen_10px"
+                android:layout_toLeftOf="@+id/iv_submit"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimen_30px"
+                android:paddingRight="@dimen/dimen_30px"
+                android:textSize="@dimen/f_30"
+                junhsue:bg_drawable="@drawable/shape_solid_c_f3f6f7_concer_50px"
+                junhsue:content_hint=" "
+                junhsue:content_hint_color="@color/c_gray_aebdcd"
+                junhsue:content_style="@style/text_f_30_c_black_55626e"
+                junhsue:left_icon_visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_comment_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_100px">
+
+                <LinearLayout
+                    android:id="@+id/ll_post_comment_list_approval_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_50px"
+                    android:paddingRight="@dimen/dimen_70px">
+
+                    <ImageView
+                        android:id="@+id/iv_post_comment_list_approval"
+                        android:layout_width="@dimen/dimen_50px"
+                        android:layout_height="@dimen/dimen_50px"
+                        android:background="@drawable/icon_post_approval" />
+
+                    <TextView
+                        android:id="@+id/tv_comment_list_approval_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/c_gray_aebdcd"
+                        android:textSize="@dimen/f_24" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_comment_list_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_40px"
+                    android:paddingRight="@dimen/dimen_40px"
+                    android:text="发送"
+                    android:textColor="@color/c_gray_aebdcd"
+                    android:textSize="@dimen/f_30"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_20px"
+        android:layout_below="@+id/ab_post_comment_detail_title"
+        android:background="@drawable/icon_bar_top_shadow" />
+</RelativeLayout>

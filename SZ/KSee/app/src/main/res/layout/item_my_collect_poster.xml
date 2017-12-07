@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_20px"
+    android:paddingRight="@dimen/dimen_40px"
+    android:gravity="center_vertical"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/btn_collect_poster_item_del"
+        android:layout_width="@dimen/dimen_60px"
+        android:layout_height="@dimen/dimen_60px"
+        android:background="@drawable/bg_poster_delete"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20px"
+        android:paddingTop="@dimen/dimen_30px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.junhsue.ksee.view.CircleImageView
+                android:id="@+id/img_collect_poster_item_avatar"
+                android:layout_width="@dimen/dimen_80px"
+                android:layout_height="@dimen/dimen_80px"
+                android:background="@drawable/icon_avatar"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30px"
+                android:layout_toRightOf="@+id/img_collect_poster_item_avatar"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_collect_poster_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:lineSpacingMultiplier="0.9"
+                    android:lineSpacingExtra="15px"
+                    android:text="班上一个熊孩子"
+                    android:textSize="@dimen/f_28"
+                    android:textColor="@color/c_black_55626e"
+                    />
+                <TextView
+                    android:id="@+id/tv_collect_poster_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:lineSpacingMultiplier="0.9"
+                    android:lineSpacingExtra="15px"
+                    android:text="2017-10-20"
+                    android:textSize="@dimen/f_24"
+                    android:textColor="@color/c_gray_aebdcd"
+                    android:layout_marginTop="@dimen/dimen_14px"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_collect_poster_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="0.9"
+            android:lineSpacingExtra="15px"
+            android:text="班上一个熊孩子，家长反应每次做家庭作业都要3个小时。"
+            android:textSize="@dimen/f_34"
+            android:textColor="@color/c_black_55626e"
+            android:layout_marginTop="@dimen/dimen_10px"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginTop="@dimen/dimen_30px"
+            android:background="@color/c_gray_d6e3f0"/>
+
+    </LinearLayout>
+
+</LinearLayout>

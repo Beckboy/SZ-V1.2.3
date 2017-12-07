@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_solid_black_242a34_corners_10px"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dimen_6px">
+
+        <ImageView
+            android:id="@+id/iv_left_icon"
+            android:layout_width="@dimen/dimen_44px"
+            android:layout_height="@dimen/dimen_44px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_8px"
+            android:background="@drawable/home_search_gray"
+            android:src="@null" />
+
+        <EditText
+            android:id="@+id/et_cancel_content"
+            style="@style/text_f_24_c_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_cancel_icon"
+            android:layout_toRightOf="@+id/iv_left_icon"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:hint="@string/search_question_hint"
+            android:maxLines="5"
+            android:paddingBottom="@dimen/dimen_4px"
+            android:paddingLeft="@dimen/dimen_10px"
+            android:paddingRight="@dimen/dimen_10px"
+            android:paddingTop="@dimen/dimen_4px"
+            android:textColorHint="@color/c_gray_b2"
+            android:textCursorDrawable="@drawable/cursor_yellow" />
+
+        <ImageView
+            android:id="@+id/iv_cancel_icon"
+            android:layout_width="@dimen/dimen_44px"
+            android:layout_height="@dimen/dimen_44px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10px"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_phone_clean"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</merge>

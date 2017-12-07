@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/img_circle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="已关注"
+            android:textColor="#F5A623"
+            android:textSize="@dimen/font_size_13sp" />
+
+
+        <TextView
+            android:id="@+id/txt_circle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/txt_favourite"
+            android:layout_toRightOf="@id/img_circle"
+            android:textColor="@color/c_black_55626e"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/txt_circle_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txt_circle_title"
+            android:layout_below="@id/txt_circle_title"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/txt_favourite"
+            android:maxLines="2"
+            android:textSize="@dimen/common_font_size_normal" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_30px"
+        android:paddingLeft="@dimen/dimen_40px"
+        android:paddingRight="@dimen/dimen_40px">
+
+        <TextView
+            android:id="@+id/tv_recommend_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/c_black_55626e"
+            android:textSize="@dimen/dimen_34px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10px">
+
+
+            <com.junhsue.ksee.view.CircleImageView
+                android:id="@+id/civ_recommend_avatar"
+                android:layout_width="@dimen/dimen_40px"
+                android:layout_height="@dimen/dimen_40px" />
+
+            <TextView
+                android:id="@+id/tv_recommend_post_user_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/f_26"
+                android:layout_marginLeft="@dimen/dimen_10px"
+                android:layout_toRightOf="@+id/civ_recommend_avatar"
+                android:textColor="@color/c_gray_95a3b1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

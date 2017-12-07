@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/act_my_feedbck"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.junhsue.ksee.MyFeedbckActivity">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/title_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:title="意见反馈"
+        junhsue:right_text="&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;提交"
+        junhsue:right_visibility="visible"
+        junhsue:left_second_text="设置"
+        junhsue:title_style="normal_txt" />
+
+    <TextView
+        android:id="@+id/tv_comment_edit_remind"
+        style="@style/text_36_c_gray_b7bcc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_feedback"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:layout_marginTop="@dimen/dimen_10px"
+        android:text="@string/feedback_edit_hint" />
+
+
+    <EditText
+        android:id="@+id/edit_feedback"
+        style="@style/text_f_36_c_3c4350"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:textCursorDrawable="@drawable/cursor_yellow"
+        android:layout_below="@+id/tv_comment_edit_remind"
+        android:layout_alignLeft="@+id/tv_comment_edit_remind"
+        android:layout_alignStart="@+id/tv_comment_edit_remind" />
+
+</RelativeLayout>

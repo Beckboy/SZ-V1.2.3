@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_30px"
+    android:paddingLeft="@dimen/dimen_30px"
+    android:paddingRight="@dimen/dimen_30px"
+    android:paddingTop="@dimen/dimen_30px">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/rl_live"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:focusable="false"
+                android:src="@drawable/icon_home_live" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="直播"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/font_size_13sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_source"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_home_source" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="干货"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/font_size_13sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_entrepreneurs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_home_entrepreneurs" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="创业者"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/font_size_13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_student_join"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_home_student_join" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="招生"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/font_size_13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_manage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_home_classroom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="管理"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/font_size_13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_home_menu_video"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="视频"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/font_size_13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_home_question" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="问答"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/font_size_13sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rl_class_room"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_home_classroom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="教室"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/font_size_13sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rl_course"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_home_course" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="线下活动"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/font_size_13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

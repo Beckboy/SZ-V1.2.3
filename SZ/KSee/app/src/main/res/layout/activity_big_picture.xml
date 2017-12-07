@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_picture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black">
+
+        <com.junhsue.ksee.view.HackyViewPager
+            android:id="@+id/hvp_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_dot_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/dimen_100px"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100px"
+            android:layout_gravity="bottom|right"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/img_save"
+                android:layout_width="@dimen/dimen_100px"
+                android:layout_height="@dimen/dimen_80px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dimen_40px"
+                android:layout_marginRight="@dimen/dimen_40px"
+                android:src="@drawable/btn_save_photo"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/tv_download_progress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_40px"
+                android:layout_marginLeft="@dimen/dimen_100px"
+                android:layout_marginRight="@dimen/dimen_100px"
+                android:layout_toLeftOf="@+id/img_save"
+                android:background="@drawable/bg_stroke_c_e5_concer_10px"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

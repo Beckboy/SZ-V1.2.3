@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24px"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_newest_heard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16px">
+
+            <com.junhsue.ksee.view.CircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="@dimen/dimen_50px"
+                android:layout_height="@dimen/dimen_50px"
+                android:layout_marginBottom="@dimen/dimen_14px"
+                android:layout_marginLeft="@dimen/dimen_30px"
+                android:layout_marginTop="@dimen/dimen_14px"
+                android:padding="@dimen/divider_height" />
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                style="@style/text_f_30_c_8392a0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dimen_10px"
+                android:layout_toRightOf="@+id/civ_avatar" />
+
+            <RelativeLayout
+                android:id="@+id/rl_collect"
+                android:layout_width="@dimen/dimen_104px"
+                android:layout_height="@dimen/dimen_60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:paddingRight="@dimen/dimen_30px">
+
+                <ImageView
+                    android:id="@+id/iv_collect"
+                    android:layout_width="@dimen/dimen_44px"
+                    android:layout_height="@dimen/dimen_44px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_newest_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_newest_heard"
+            android:layout_marginLeft="@dimen/dimen_30px"
+            android:layout_marginRight="@dimen/dimen_30px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_f_36_c_3c4350"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_6px"
+                android:lineSpacingExtra="@dimen/dimen_6px" />
+
+            <TextView
+                android:id="@+id/tv_topic_content"
+                style="@style/text_f_30_c_9da1a7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/dimen_6px"
+                android:maxLines="5" />
+
+            <TextView
+                android:id="@+id/tv_from_topic_name"
+                style="@style/text_f_24_c_8392a0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_30px"
+                android:layout_marginTop="@dimen/dimen_10px"
+                android:background="@drawable/shape_solid_gray_e5_corners_4px"
+                android:gravity="center"
+                android:padding="@dimen/dimen_7px" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_below="@+id/ll_newest_center"
+            android:background="@color/c_gray_e5" />
+
+        <include
+            layout="@layout/component_question_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_divider" />
+
+    </RelativeLayout>
+</LinearLayout>

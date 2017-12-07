@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ActionBar">
+        <!--背景图片-->
+        <attr name="background" format="reference|color" />
+
+        <attr name="title_style">
+            <!--正常模式-->
+            <enum name="normal_img" value="0" />
+            <enum name="normal_txt" value="3" />
+            <!--搜索框-->
+            <enum name="search" value="1" />
+            <!--自定义  view-->
+            <enum name="self_middle_layout" value="2" />
+        </attr>
+        <attr name="search_left_style">
+            <!--左边为主页-->
+            <enum name="left_first" value="0" />
+            <!--左边为下一级页面-->
+            <enum name="left_second" value="1" />
+        </attr>
+        <!--add 搜索框左边的第一个控件是否可见-->
+        <attr name="search_left_image_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <attr name="center_title_text_style" format="reference" />
+        <!--搜索框左边的控件的图片-->
+        <attr name="search_left_image" format="reference" />
+        <!--搜索框右边控件的文字-->
+        <attr name="search_right_text" format="reference|string" />
+        <!--搜索框右边控件的图片-->
+        <attr name="search_right_image" format="reference" />
+        <!--搜索框调整右边控件的图片的大小-->
+        <!--设置为false表示使用图片实际大小，true则计算出一个比例。-->
+        <attr name="search_right_image_adjust" format="boolean" />
+        <!--搜索框的hint文字-->
+        <attr name="search_hint" format="reference|string" />
+        <!--搜索框的hint文字 style-->
+        <attr name="search_hint_color" format="color" />
+        <!--add搜索框edittext的背景图片-->
+        <attr name="search_edittext_background" format="reference" />
+        <!--add搜索框edittext的左边图片-->
+        <attr name="search_edittext_drawable_left" format="reference" />
+        <!--add搜索框edittext的上边图片-->
+        <attr name="search_edittext_drawable_top" format="reference" />
+        <!--add搜索框edittext的右边图片-->
+        <attr name="search_edittext_drawable_right" format="reference" />
+        <!--add搜索框edittext的下边图片-->
+        <attr name="search_edittext_drawable_bottom" format="reference" />
+        <!--add搜索框edittext的文字样式-->
+        <attr name="search_edittext_style" format="reference" />
+
+        <!--标题-->
+        <attr name="title" format="reference|string" />
+        <!--左边的第一个控件是否可见-->
+        <attr name="left_first_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+
+        <!--左边的第一个控件的图片-->
+        <attr name="left_first_image" format="reference" />
+
+        <!--左边的第二个控件是否可见-->
+        <attr name="left_second_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <!--左边的第二个控件的文字-->
+        <attr name="left_second_text" format="reference|string" />
+
+        <attr name="left_second_text_color" format="reference|color" />
+        <!--右边的第一个控件的文字-->
+        <attr name="right_text" format="reference|string" />
+        <!--右边的第一个控件的图片-->
+        <attr name="right_image" format="reference" />
+        <!--add right text的文字样式-->
+        <attr name="right_text_style" format="reference" />
+        <attr name="right_text_color" format="reference|color" />
+
+
+        <!--右边的第一个控件是否可见-->
+        <attr name="right_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <attr name="right_img_one" format="reference" />
+        <attr name="right_img_two" format="reference" />
+
+        <!--底部的分割线是否可见-->
+        <attr name="bottom_divider_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="order_user_info_attrs">
+        <attr name="hint_visible" format="reference|boolean" />
+        <attr name="item_click" format="reference|boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="order_goods_style">
+        <!-- 商品数量是否能操作 -->
+        <attr name="number_is_operation" format="reference|boolean" />
+        <!-- 价格-->
+        <attr name="goods_price_visible" format="reference|boolean" />
+        <attr name="goods_number_small_visible" format="reference|boolean" />
+        <!-- 商品数量操作是否可见-->
+        <attr name="goods_number_operation_visible" format="reference|boolean" />
+        <!-- 总金额是否可见-->
+        <attr name="total_price_visible" format="reference|boolean" />
+        <attr name="goods_number_unit_visible" format="reference|boolean" />
+    </declare-styleable>
+
+    <!-- CancelEditText
+    设置CancelEditText的样式 === -->
+    <declare-styleable name="CancelEditText">
+        <!--文本框的文字-->
+        <attr name="content" format="reference|string" />
+        <!--文本框的文字样式-->
+        <attr name="content_style" format="reference" />
+        <!--文本框的左边图片是否可见-->
+        <attr name="left_icon_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <!--文本框的左边图片-->
+        <attr name="left_icon" format="reference" />
+        <!--文本框的文字hint-->
+        <attr name="content_hint" format="reference|string" />
+        <!---->
+        <attr name="content_hint_color" format="reference|color" />
+        <!--文本框的文字inputType-->
+        <attr name="input_type" format="reference" />
+        <!--文本框的文字最大数-->
+        <attr name="max_length" format="integer" />
+        <!--文本框的文字singleLine-->
+        <attr name="single_line" format="boolean" />
+        <!--文本框的文字最大行数-->
+        <attr name="max_lines" format="integer" />
+        <!--文本框的右边图片-->
+        <attr name="cancel_icon" format="reference" />
+        <!--布局的背景-->
+        <attr name="bg_drawable" format="reference|color" />
+        <!-- 设置输入框的样式：1.普通输入框 2.密码输入框
+                              3. None -->
+        <attr name="common_dialog_style">
+            <enum name="none" value="0" />
+            <enum name="plain" value="1" />
+            <enum name="secure" value="2" />
+        </attr>
+    </declare-styleable>
+    <!-- 发票条目 -->
+    <declare-styleable name="invoice_attrs">
+        <attr name="invoice_model">
+            <enum name="normal_model" value="0" />
+            <enum name="edit_model" value="1" />
+        </attr>
+        <attr name="item_title" format="reference|string" />
+        <attr name="item_content" format="reference|string" />
+        <attr name="item_right_content" format="reference|string" />
+        <!--字体大小-->
+        <attr name="item_title_text_size" format="dimension" />
+        <attr name="item_content_text_size" format="dimension" />
+        <!--标题的文字样式-->
+        <attr name="item_title_text_style" format="reference" />
+
+        <attr name="item_content_text_color" format="reference" />
+    </declare-styleable>
+    <!-- 首页轮播 -->
+    <declare-styleable name="home_banner">
+        <attr name="item_pager_height" format="dimension" />
+    </declare-styleable>
+    <!--首页滚轮-->
+    <declare-styleable name="IndicatorView">
+        <!--小圆点的下边距-->
+        <attr name="dotmargin_bottom" format="dimension" />
+        <!--小圆点的上边距-->
+        <attr name="dotmargin_top" format="dimension" />
+        <!--距离父控件左面位置-->
+        <attr name="dotmargin_left" format="dimension" />
+        <!--距离父控件右面位置-->
+        <attr name="dotmargin_right" format="dimension" />
+        <!--是否可以自动播放功能-->
+        <attr name="can_play" format="boolean" />
+        <!--小圆点布局的位置-->
+        <attr name="dots_gravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10" />
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01" />
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11" />
+
+        </attr>
+        <!--小圆点布局的之前的水平间距-->
+        <attr name="dots_horizontal_space" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="FancyCoverFlow">
+        <attr name="unselectedAlpha" format="float" />
+        <attr name="unselectedSaturation" format="float" />
+        <attr name="unselectedScale" format="float" />
+        <attr name="maxRotation" format="integer" />
+        <attr name="scaleDownGravity" format="float" />
+        <attr name="actionDistance" format="integer">
+            <enum name="auto" value="2147483647" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ExpandableTextView">
+        <!--折叠时最多显示行数，默认的为3行-->
+        <attr name="max_collapsed_lines" format="integer" />
+        <!--展开时最多显示行数，默认的为Integer.MAX_VALUE-->
+        <attr name="max_expanded_lines" format="integer" />
+        <attr name="anim_duration" format="integer" />
+        <attr name="anim_alpha_start" format="float" />
+        <!--展开图片-->
+        <attr name="expand_drawable" format="reference" />
+        <!--折叠图片-->
+        <attr name="collapse_drawable" format="reference" />
+        <!--整个控件的上下左右间距-->
+        <attr name="expand_padding_left" format="dimension" />
+        <attr name="expand_padding_right" format="dimension" />
+        <attr name="expand_padding_top" format="dimension" />
+        <attr name="expand_padding_bottom" format="dimension" />
+        <!--可以扩展的文字和提示图片之间的间距-->
+        <attr name="text_drawable_spacing" format="dimension" />
+        <!--提示图片和提示文字距离的间距-->
+        <attr name="expand_drawable_tip_text_spacing" format="dimension" />
+        <!--指示图片旁边的展开文字-->
+        <attr name="expand_drawable_tip_text" format="string" />
+        <!--指示图片旁边的折叠文字-->
+        <attr name="collapse_drawable_tip_text" format="string" />
+        <!--提示文字的大小-->
+        <attr name="drawable_tip_text_size" format="dimension" />
+        <!--提示文字的颜色-->
+        <attr name="drawable_tip_text_color" format="color" />
+        <!--文字和图片之间的摆放方式-->
+        <attr name="orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--当超过最大行数之后添加省略号的TextView -->
+    <declare-styleable name="EllipsizeTextView">
+        <!--省略加的图片-->
+        <attr name="ellipsize_drawable" format="reference" />
+        <!--省略加的文字-->
+        <attr name="ellipsize_text" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="attrs_msg">
+        <attr name="img" format="reference" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+   颜色命名(#ff0099命名为:c_基色_f09; #e2e2e2命名为:c_基色_e2; #ffffff命名为:c_基色_fff,
+   其它名全名:c_基色_全名[如:#FF4081 命名为c_red_FF4081])
+   -->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="gray">#ff454545</color>
+    <color name="red">#ffff0000</color>
+    <color name="c_red_fc613c">#FC613C</color>
+    <color name="pink">#ff599d</color>
+    <color name="blue">#ff2b57aa</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--所有页面的底色 -->
+    <color name="page_base_background">#F5F5F5</color>
+    <color name="page_commuity_background">#FAFAFA</color>
+    <color name="actionbar_base_background">#2C3239</color>
+    <color name="transent">#00000000</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+
+    <color name="c_yellow_e9d09a">#E9D09A</color>
+    <color name="c_yellow_cdac8d">#CDAC8D</color>
+    <color name="c_yellow_c89016">#C89016</color>
+    <color name="c_yellow_ffc84a">#FFC84A</color>
+    <color name="c_yellow_be9976">#BE9976</color>
+    <color name="c_yellow_bd8e21">#80BD8E21</color>
+    <color name="c_yellow_e1cebb">#E1CEBB</color>
+    <color name="c_gray_aebdcd">#AEBDCD</color>
+    <color name="c_gray_e5">#E5E5E5</color>
+    <color name="c_gray_e2d7cc">#E2D7CC</color>
+    <color name="c_gray_b0">#B0B0B0</color>
+    <color name="c_gray_b2">#b2b2b2</color>
+    <color name="c_gray_9da1a7">#9DA1A7</color>
+    <color name="c_gray_999">#999999</color>
+    <color name="c_gray_666666">#666666</color>
+    <color name="c_gray_b7bcc1">#B7BCC1</color>
+    <color name="c_gray_b7babd">#B7BABD</color>
+    <color name="c_gray_b7b9bd">#B7B9BD</color>
+    <color name="c_gray_cb">#CBCBCB</color>
+    <color name="c_gray_ccc">#CCCCCC</color>
+    <color name="c_gray_f5">#F5F5F5</color>
+    <color name="c_gray_242E42">#242E42</color>
+    <color name="c_gray_f3f6f7">#F3F6F7</color>
+    <color name="c_gray_d8">#D8D8D8</color>
+    <color name="c_gray_c0cad3">#C0CAD3</color>
+    <color name="c_gray_d6e3f0">#D6E3F0</color>
+    <color name="c_gray_2c">#2c2c2c</color>
+    <!-- 通用的灰色字体颜色-->
+    <color name="c_gray_8392a0">#8392A0</color>
+    <color name="c_gray_95a3b1">#95A3B1</color>
+    <color name="c_gray_a6">#A6A6A6</color>
+    <color name="c_black_55626e">#55626E</color>
+    <color name="c_black_708293">#708293</color>
+    <!-- 通用的字体黑色字体颜色-->
+    <color name="c_black_30_000">#4D000000</color>
+    <color name="c_black_3c4350">#3C4350</color>
+    <color name="c_gray_3d4044">#3D4044</color>
+    <color name="c_gray_343a44">#343A44</color>
+    <color name="c_black_2c3239">#2C3239</color>
+    <color name="c_black_232323">#232323</color>
+    <color name="c_black_242a34">#242A34</color>
+    <color name="c_black_222">#222222</color>
+    <color name="c_black_54617a">#54617A</color>
+    <color name="c_black_4C3A30">#4C3A30</color>
+    <color name="c_back_333">#333333</color>
+    <color name="c_gray_919499">#919499</color>
+    <color name="c_gray_97">#979797</color>
+    <color name="c_green_59b197">#59B197</color>
+    <color name="c_green_1ab587">#1AB587</color>
+    <color name="c_green_50e3c2">#50E3C2</color>
+    <color name="c_gray_c7cdd5">#C7CDD5</color>
+    <color name="c_gray_3C9E89">#3C9E89</color>
+    <color name="c_gray_328C78">#328C78</color>
+    <color name="c_gray_4a90e2">#4A90E2</color>
+    <color name="c_yellow_fdfad5">#fdfad5</color>
+    <color name="c_white_f8">#f8f8f8</color>
+
+    //
+    <color name="c_red_d94141">#d94141</color>
+    <!-- 登录注册页面颜色 -->
+    <color name="c_flow_item_normal">#F9F9F9</color>
+    <color name="c_flow_item_selector">#CDAC8D</color>
+    <!-- 日历颜色 -->
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+
+
+    <color name="RoundColor">#DAF6FE</color>
+    <color name="TimeTextColor">#FF84AD</color>
+    <color name="RoundFillColor">#F7E7C4</color>
+    <color name="RoundHintTextColor">#666666</color>
+
+    <color name="c_red_ef5329">#ef5329</color>
+    <color name="c_red_B33030">#B33030</color>
+    <!--透明度颜色-->
+</resources>

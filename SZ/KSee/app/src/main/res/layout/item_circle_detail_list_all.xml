@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:etv="http://schemas.android.com/apk/res-auto"
+    android:background="@color/page_base_background"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_40px"
+        android:descendantFocusability="blocksDescendants"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dimen_30px">
+
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.junhsue.ksee.view.CircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="@dimen/dimen_80px"
+                android:layout_height="@dimen/dimen_80px"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/pic_default_avatar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/civ_avatar"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_30px"
+                android:orientation="vertical">
+                <!--发布人-->
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/f_28"
+                    android:textColor="@color/c_black_55626e"
+                    android:layout_marginBottom="@dimen/dimen_2px"
+                    />
+                <!--发布时间-->
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/f_24"
+                    android:textColor="@color/c_gray_aebdcd" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_head">
+            <!--帖子标题-->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_40"
+                android:textColor="@color/c_black_55626e"
+                android:drawablePadding="@dimen/dimen_10px"
+                android:layout_marginTop="@dimen/dimen_30px"
+                android:gravity="top"/>
+            <ImageView
+                android:id="@+id/img_best"
+                android:layout_width="@dimen/dimen_40px"
+                android:layout_height="@dimen/dimen_40px"
+                android:layout_alignTop="@+id/tv_title"
+                android:layout_alignLeft="@+id/tv_title"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dimen_8px"
+                android:src="@drawable/icon_post_best"/>
+        </RelativeLayout>
+
+        <!-- 不同的地方 -->
+        <ViewStub
+            android:id="@+id/viewStub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"/>
+
+        <com.junhsue.ksee.view.ExpandableTextView
+            android:id="@+id/expandable_textview_text"
+            style="@style/text_f02_34_708293"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            etv:drawable_tip_text_color="@color/c_black_55626e"
+            etv:drawable_tip_text_size="@dimen/dimen_34px"
+            etv:expand_drawable_tip_text_spacing="@dimen/dimen_34px"
+            etv:max_collapsed_lines="5"
+            etv:orientation="vertical"
+            etv:text_drawable_spacing="@dimen/dimen_20px"
+            android:layout_marginTop="@dimen/dimen_30px"
+            android:layout_below="@+id/viewStub" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50px"
+            android:layout_marginTop="@dimen/dimen_30px"
+            android:layout_below="@+id/expandable_textview_text"
+            android:orientation="horizontal">
+            <!--分享-->
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="分享"
+                android:textSize="@dimen/f_24"
+                android:textColor="@color/c_gray_aebdcd"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/dimen_6px"
+                android:drawableLeft="@drawable/icon_post_share_normal"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <!--钬-->
+            <TextView
+                android:id="@+id/tv_hot"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_24"
+                android:textColor="@color/c_gray_aebdcd"
+                android:drawableLeft="@drawable/icon_post_approval"
+                android:gravity="center_vertical" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <!--评论-->
+            <TextView
+                android:id="@+id/tv_chat"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/f_24"
+                android:textColor="@color/c_gray_aebdcd"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/dimen_6px"
+                android:drawableLeft="@drawable/icon_post_chat_normal" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <!--收藏-->
+            <TextView
+                android:id="@+id/tv_collect"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="收藏"
+                android:textSize="@dimen/f_24"
+                android:textColor="@color/c_gray_aebdcd"
+                android:button="@drawable/selector_bg_check_collect"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

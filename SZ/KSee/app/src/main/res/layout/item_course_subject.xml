@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_20px"
+        android:layout_below="@id/ll_content"
+        android:background="@color/page_base_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线下活动"
+            android:textColor="#343A44"
+            android:textSize="@dimen/f_36"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="@dimen/dimen_30px"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_16px"
+            android:textStyle="bold"
+            android:background="@drawable/bg_course_point"/>
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_10px"
+            android:textColor="#343A44"
+            android:textSize="@dimen/f_34"
+            android:textStyle="bold"
+            android:text="1"/>
+    </LinearLayout>
+
+</LinearLayout>

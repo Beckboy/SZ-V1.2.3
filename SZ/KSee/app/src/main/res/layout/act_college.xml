@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_base_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:gravity="center"
+        android:text="私塾"
+        android:textColor="@color/c_gray_242E42"
+        android:textSize="@dimen/common_font_size_x"
+        android:background="@color/white" />
+
+
+    <com.junhsue.ksee.view.ColleageTabView
+        android:id="@+id/colleageTabView"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:layout_height="@dimen/actionbar_height"
+        android:visibility="gone"/>
+
+
+    <com.junhsue.ksee.view.CommonNoTouchViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

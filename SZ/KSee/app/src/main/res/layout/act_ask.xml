@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_base_background">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/ab_ask_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        junhsue:left_second_text="返回"
+        junhsue:left_second_visibility="visible"
+        junhsue:right_text="下一步"
+        junhsue:right_visibility="visible"
+        junhsue:title_style="normal_txt" />
+
+    <ScrollView
+        android:id="@+id/sv_ask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ab_ask_title"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dimen_30px"
+            android:paddingRight="@dimen/dimen_30px">
+
+            <RelativeLayout
+                android:id="@+id/rl_question_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_300px">
+
+                <TextView
+                    android:id="@+id/tv_question_remind"
+                    style="@style/text_f_42_c8392a0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_write_question" />
+
+                <EditText
+                    android:id="@+id/et_question"
+                    style="@style/text_f_32_c_3c4350"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_question_remind"
+                    android:layout_marginBottom="@dimen/dimen_10px"
+                    android:layout_marginTop="@dimen/dimen_10px"
+                    android:background="@drawable/shape_stroke_c_d8d8d8"
+                    android:gravity="top"
+                    android:hint="问题最多不超过30个字哦！"
+                    android:maxLength="30"
+                    android:textColorHint="@color/c_gray_c0cad3"
+                    android:textCursorDrawable="@drawable/cursor_yellow" />
+
+                <!--           <TextView
+                               android:id="@+id/tv_question_float_remind"
+                               style="@style/text_f_48_cb7babd"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_centerHorizontal="true"
+                               android:layout_alignParentBottom="true"
+                               android:gravity="center"
+                               android:visibility="gone"
+                               android:paddingBottom="@dimen/dimen_30px"
+                               android:paddingTop="@dimen/dimen_30px"
+                               android:text="@string/please_write_question" />-->
+            </RelativeLayout>
+            <!--描述区域-->
+            <RelativeLayout
+                android:id="@+id/rl_description_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_question_layout">
+
+                <TextView
+                    android:id="@+id/tv_description_remind"
+                    style="@style/text_f_42_c8392a0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_write_description" />
+
+                <EditText
+                    android:id="@+id/et_description"
+                    style="@style/text_f_32_c_3c4350"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_480px"
+                    android:layout_below="@id/tv_description_remind"
+                    android:layout_marginBottom="@dimen/dimen_10px"
+                    android:layout_marginTop="@dimen/dimen_10px"
+                    android:background="@drawable/shape_stroke_c_d8d8d8"
+                    android:gravity="top"
+                    android:hint="填写更多描述，方便大家更好为您解答哦，试试这样？学校坐标在上海，有五六百名学生，专注于学科教育的培训…"
+                    android:textColorHint="@color/c_gray_c0cad3"
+                    android:textCursorDrawable="@drawable/cursor_yellow" />
+
+                <!--                <TextView
+                                    android:id="@+id/tv_description_float_remind"
+                                    style="@style/text_f_48_cb7babd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:visibility="gone"
+                                    android:text="@string/please_write_description" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_tabs_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_description_layout"
+                android:paddingBottom="@dimen/dimen_200px">
+
+                <TextView
+                    android:id="@+id/tv_question_topic"
+                    style="@style/text_f_42_c8392a0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_select_topic" />
+
+                <!--            <TextView
+                                android:id="@+id/tv_question_float_topic"
+                                style="@style/text_f_48_cb7babd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/please_select_topic"
+                                android:visibility="gone" />-->
+
+                <com.junhsue.ksee.view.FlowLayout
+                    android:id="@+id/fl_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_question_topic"
+                    android:layout_marginBottom="@dimen/dimen_30px" />
+            </RelativeLayout>
+
+            <!--            <TextView
+                            android:id="@+id/tv_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/rl_question_layout"
+                            android:layout_alignTop="@+id/rl_question_layout"
+                            android:visibility="visible" />
+                        <TextView
+                            android:id="@+id/tv_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/rl_description_layout"
+                            android:layout_alignTop="@+id/rl_description_layout"
+                            android:layout_marginBottom="@dimen/dimen_50px"
+                            android:layout_marginTop="@dimen/dimen_50px"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/rl_tabs_layout"
+                            android:layout_alignTop="@+id/rl_tabs_layout"
+                            android:visibility="visible" />-->
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_24px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_answer_heard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16px">
+
+            <com.junhsue.ksee.view.CircleImageView
+                android:id="@+id/civ_answer_avatar"
+                android:layout_width="@dimen/dimen_80px"
+                android:layout_height="@dimen/dimen_80px"
+                android:layout_marginBottom="@dimen/dimen_14px"
+                android:layout_marginLeft="@dimen/dimen_30px"
+                android:layout_marginTop="@dimen/dimen_14px"
+                android:padding="@dimen/divider_height" />
+
+            <TextView
+                android:id="@+id/tv_answer_nickname"
+                style="@style/text_f_30_c_8392a0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dimen_10px"
+                android:layout_toRightOf="@+id/civ_answer_avatar" />
+
+            <RelativeLayout
+                android:id="@+id/rl_praise"
+                android:layout_width="@dimen/dimen_104px"
+                android:layout_height="@dimen/dimen_80px"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:paddingRight="@dimen/dimen_30px">
+
+                <ImageView
+                    android:id="@+id/iv_praise"
+                    android:layout_width="@dimen/dimen_44px"
+                    android:layout_height="@dimen/dimen_44px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_answer_content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_answer_heard">
+
+            <TextView
+                android:id="@+id/tv_text_answer_content"
+                style="@style/text_f_30_c_3c4350"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30px"
+                android:lineSpacingExtra="@dimen/dimen_6px"
+                android:layout_marginRight="@dimen/dimen_30px"
+                android:ellipsize="end"
+                android:maxLines="10"
+                android:visibility="gone" />
+
+            <!-- 语音回答布局-->
+            <LinearLayout
+                android:id="@+id/ll_voice_answer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_90px"
+                android:paddingRight="@dimen/dimen_30px">
+
+                <RelativeLayout
+                    android:id="@+id/rl_voice_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_80px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_voice_answer_normal">
+
+                    <ImageView
+                        android:id="@+id/img_answer_voice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_30px"
+                        android:src="@drawable/icon_others_play03" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_voice_length"
+                    style="@style/chat_text_name_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/bubble"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_answer_content_layout"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dimen_24px"
+            android:paddingLeft="@dimen/dimen_30px"
+            android:paddingRight="@dimen/dimen_30px"
+            android:paddingTop="@dimen/dimen_24px">
+
+            <TextView
+                android:id="@+id/tv_praise_number"
+                style="@style/text_f_24_c_8392a0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/tv_answer_time"
+                style="@style/text_f_24_c_8392a0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

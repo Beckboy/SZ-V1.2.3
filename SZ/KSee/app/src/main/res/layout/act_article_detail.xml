@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/act_article_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.junhsue.ksee.ArticleDetailActivity">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/title_art_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_second_text="返回"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:right_img_one="@drawable/icon_live_share"
+        junhsue:right_visibility="visible"
+        junhsue:title_style="normal_img" />
+
+    <com.junhsue.ksee.view.WebPageView
+        android:id="@+id/artice_web_page_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_zan"
+        android:layout_below="@+id/title_art_detail"/>
+
+    <LinearLayout
+        android:id="@+id/ll_zan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_98px"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_art_detail_zan"
+            android:layout_width="@dimen/dimen_190px"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_art_detail_zan"
+            android:gravity="center"
+            android:clickable="true"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_art_detail_zan"
+                android:layout_width="@dimen/dimen_46px"
+                android:layout_height="@dimen/dimen_52px"
+                android:background="@drawable/zhi_article_icon_thumb_up"/>
+            <TextView
+                android:id="@+id/tv_art_detail_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0人觉得有用"
+                android:textSize="@dimen/f_18"
+                android:textColor="@color/c_gray_e5"
+                android:includeFontPadding="false"
+                android:lineSpacingMultiplier="0.9"
+                android:layout_marginTop="12px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_art_detail_talk"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_art_detail_talk"
+            android:gravity="center"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/dimen_32px"
+                android:layout_height="@dimen/dimen_32px"
+                android:background="@drawable/zhi_article_icon_write"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我来说两句"
+                android:textSize="@dimen/f_30"
+                android:includeFontPadding="false"
+                android:lineSpacingMultiplier="0.9"
+                android:textColor="@color/c_yellow_cdac8d"
+                android:layout_marginLeft="@dimen/dimen_10px"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_speak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FAFAFA"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_20px"
+        android:paddingRight="@dimen/dimen_20px"
+        android:paddingTop="@dimen/dimen_14px"
+        android:paddingBottom="@dimen/dimen_14px"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edit_article_talk"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c_black_3c4350"
+            android:textColorHint="@color/c_gray_e5"
+            android:textSize="@dimen/f_30"
+            android:background="@drawable/shape_rec_radius_10dp_fff_1px_e5"
+            android:maxLines="4"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="0.9"
+            android:lineSpacingExtra="15px"
+            android:hint="写下你的评论"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_20px"
+            />
+
+        <TextView
+            android:id="@+id/tv_article_send"
+            android:layout_width="@dimen/dimen_120px"
+            android:layout_height="@dimen/dimen_70px"
+            android:text="发送"
+            android:clickable="true"
+            android:textSize="@dimen/f_30"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dimen_20px"
+            android:background="@drawable/shape_rec_radius_10dp_cdac8d_1px_a98d73"/>
+    </LinearLayout>
+
+</RelativeLayout>

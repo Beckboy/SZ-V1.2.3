@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dimen_30px"
+    android:layout_marginLeft="@dimen/dimen_30px"
+    android:layout_marginTop="@dimen/dimen_80px"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tbTitle_register1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="注册"
+        android:textColor="#6D7985"
+        android:textSize="@dimen/dimen_32px"/>
+
+    <LinearLayout
+        android:id="@+id/tbNext_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onclick"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tbNext_register1_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:textColor="#CDAC8D"
+            android:textSize="@dimen/dimen_30px"/>
+
+        <ImageButton
+            android:id="@+id/tbNext_step_Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onclick"
+            android:background="@drawable/selector_register1_nextstep"/>
+    </LinearLayout>
+
+</RelativeLayout>

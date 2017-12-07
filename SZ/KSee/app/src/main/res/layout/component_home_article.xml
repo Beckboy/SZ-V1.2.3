@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_home_content_article"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--控件改变了,记得在activity里修改-->
+        <RelativeLayout
+            android:id="@+id/ll_article_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="112dp"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_home_tag">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/icon_home_post_read_more"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/c_black_4C3A30"
+                    android:text="每天看一点"/>
+            </LinearLayout>
+
+   <!--         <TextView
+                android:id="@+id/txt_aritcle_more"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_64px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:text="更多 >"
+                android:textColor="@color/c_gray_95a3b1"
+                android:textSize="@dimen/f_28" />-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_home_content_article_block"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen_30px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_article_more"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+<!--    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_article_expend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_20px"
+            android:paddingRight="@dimen/dimen_20px"
+            android:paddingTop="@dimen/dimen_20px">
+
+            <TextView
+                style="@style/text_f_24_95a3b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="加载更多文章" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_56px"
+                android:layout_height="@dimen/dimen_56px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_8px"
+                android:background="@drawable/icon_more_read" />
+        </LinearLayout>
+    </RelativeLayout>-->
+</LinearLayout>

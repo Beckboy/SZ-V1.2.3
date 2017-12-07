@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    >
+
+    
+    
+    <ImageView
+        android:id="@+id/img_coupon_bg"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/bg_solution_convert"/>
+
+
+    <TextView
+        android:id="@+id/txt_coupon_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:textSize="@dimen/font_size_21sp"
+        android:text="兑换券"/>
+
+
+
+    <TextView
+        android:id="@+id/txt_coupon_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding"
+        android:layout_marginLeft="35dp"
+        android:textSize="@dimen/common_font_size_x"
+        android:textColor="@color/c_black_55626e"
+        android:text="办学方案包"/>
+
+    <TextView
+        android:id="@+id/txt_coupon_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_coupon_title"
+        android:layout_alignLeft="@id/txt_coupon_title"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/commmon_font_size_small"
+        android:textColor="@color/c_gray_95a3b1"
+        android:text="描述"/>
+
+    <TextView
+        android:id="@+id/txt_coupon_valid_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_coupon_desc"
+        android:layout_alignLeft="@id/txt_coupon_title"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/commmon_font_size_small"
+        android:textColor="@color/c_red_fc613c"
+        android:text="描述"/>
+
+</RelativeLayout>

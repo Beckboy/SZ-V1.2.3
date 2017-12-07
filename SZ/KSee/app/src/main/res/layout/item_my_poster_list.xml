@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_20px"
+    android:paddingRight="@dimen/dimen_40px"
+    android:gravity="center_vertical"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/btn_post_item_del"
+        android:layout_width="@dimen/dimen_60px"
+        android:layout_height="@dimen/dimen_60px"
+        android:background="@drawable/bg_poster_delete"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20px"
+        android:paddingTop="@dimen/dimen_20px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_poster_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="0.9"
+            android:lineSpacingExtra="15px"
+            android:textSize="@dimen/f_34"
+            android:textColor="@color/c_black_55626e"
+            />
+
+        <TextView
+            android:id="@+id/tv_poster_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="0.9"
+            android:lineSpacingExtra="15px"
+            android:textSize="@dimen/f_28"
+            android:textColor="@color/c_gray_aebdcd"
+            android:layout_marginTop="@dimen/dimen_14px"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginTop="@dimen/dimen_14px"
+            android:background="@color/c_gray_d6e3f0"/>
+
+    </LinearLayout>
+
+</LinearLayout>

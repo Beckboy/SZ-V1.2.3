@@ -1,0 +1,137 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        applicationId "com.junhsue.ksee"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 16
+        versionName "1.2.3"
+        testInstrumentationRunner "android.support.test.runner.AndrowidJUnitRunner"
+        multiDexEnabled true //由于方法数过多,超过64k,所以要添加该属性
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+//            storeFile file("/Users/longer/Desktop/work/project-space/KSee/keystore/ksee.keystore")
+            storeFile file('/Users/hunter_J/Desktop/JUNHSUE/SZ/keystore/ksee.keystore')
+            //storeFile file('/Users/Sugar/source/ksee.keystore')
+            storePassword "junhsue200000"
+            keyAlias "android"
+            keyPassword "junhsue200000"
+            v2SigningEnabled false
+        }
+    }
+
+    productFlavors {
+        junhsue {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "junhsue"]
+        }
+        wandoujia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+        }
+        baidu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+        }
+        c360 {
+
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "c360"]
+        }
+        yingyongbao {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyongbao"]
+        }
+        huawei {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei"]
+        }
+        oppo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "oppo"]
+        }
+
+        //
+        vivo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "vivo"]
+        }
+        wandoujia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+        }
+        xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+        }
+
+
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+}
+
+
+dependencies {
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //compile 'com.android.support:support-v4:23+'
+    //compile 'com.android.support:support-v4:22.0.0'
+    //noinspection GradleCompatible
+    compile project(path: ':ptr-lib')
+    //    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/alipaySdk-20170309.jar')
+    compile project(':Three_levels_library')
+    compile project(':ptr-lib')
+    //图片圆角
+    compile project(':easeUI_CN')
+    //
+    compile files('libs/libammsdk.jar')
+    //wechat pay
+    //compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile files('libs/mid-sdk-3.73.jar')
+    compile files('libs/mta-android-sdk-3.1.3.jar')
+    compile files('libs/track-sdk_v3.1.3.jar')
+
+    compile project(':polyv-live-sdk')
+    //
+    //compile 'com.android.support:design:22.2.0'
+    //    compile 'com.android.support:design:22.2.0'
+    //compile 'com.android.support:recyclerview-v7:22.0.0'
+    //指示器
+    compile project(':magicindicator')
+    //由于方法数过多,添加改jar进行分包
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.qiniu:qiniu-android-sdk:7.3.+'
+    compile 'com.squareup.okio:okio:1.11.0'
+    compile 'com.qiniu:happy-dns:0.2.11'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.malinskiy:superrecyclerview:1.1.4'
+    compile 'com.mikhaellopez:circularprogressbar:1.1.1'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.github.iwgang:countdownview:2.1.5'
+    compile 'com.shuyu:GSYVideoPlayer:2.0.7'
+    compile 'com.bm.photoview:library:2.0.7'
+    compile 'com.felipecsl:gifimageview:2.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:multidex:1.0.0'
+    testCompile 'junit:junit:4.12'
+}

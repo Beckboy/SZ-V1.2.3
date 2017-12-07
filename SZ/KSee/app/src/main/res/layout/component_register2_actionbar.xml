@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_74px"
+    android:layout_marginLeft="@dimen/dimen_30px"
+    android:layout_marginRight="@dimen/dimen_30px"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/tbBtn_register2_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:onClick="onclick">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_activity_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一步"
+            android:textSize="@dimen/dimen_30px"
+            android:visibility="invisible"
+            android:textColor="#CDAC8D"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tbTitle_register1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="@dimen/dimen_32px"
+        android:textColor="#6D7985"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/tbNext_register2_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="onclick">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:textSize="@dimen/dimen_30px"
+            android:textColor="#CDAC8D"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/selector_register1_nextstep"/>
+    </LinearLayout>
+
+</RelativeLayout>

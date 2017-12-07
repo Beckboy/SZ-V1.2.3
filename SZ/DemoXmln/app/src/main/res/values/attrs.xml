@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="order_user_info_attrs">
+        <attr name="hint_visible" format="reference|boolean" />
+        <attr name="item_click" format="reference|boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="order_goods_style">
+        <!-- 商品数量是否能操作 -->
+        <attr name="number_is_operation" format="reference"/>
+        <!-- 价格-->
+        <attr name="goods_price_visible" format="reference"/>
+        <attr name="goods_number_small_visible" format="reference"/>
+        <!-- 商品数量操作是否可见-->
+        <attr name="goods_number_operation_visible" format="reference"/>
+        <!-- 总金额是否可见-->
+        <attr name="total_price_visible" format="reference"/>
+    </declare-styleable>
+
+</resources>

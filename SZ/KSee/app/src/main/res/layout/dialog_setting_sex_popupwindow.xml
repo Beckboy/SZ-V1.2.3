@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dimen_50px"
+    android:paddingRight="@dimen/dimen_50px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_radiobutton">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_122px"
+            android:text="性别"
+            android:textColor="#2C3239"
+            android:textSize="@dimen/f_42"
+            android:gravity="center"
+            android:background="@drawable/shape_rec_radius_5dp_fff"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_2px"
+            android:background="#F5F5F5"/>
+
+        <RadioGroup
+            android:id="@+id/pop_sex_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/pop_sex_rb_man"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@drawable/selector_item_sex"
+                android:text="男"
+                android:textColor="#2C3239"
+                android:textSize="@dimen/f_36"
+                android:paddingLeft="@dimen/dimen_90px"
+                android:paddingRight="@dimen/dimen_90px"
+                android:paddingTop="@dimen/dimen_30px"
+                android:paddingBottom="@dimen/dimen_30px"
+                android:background="#FFFFFF"/>
+            <RadioButton
+                android:id="@+id/pop_sex_rb_woman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@drawable/selector_item_sex"
+                android:text="女"
+                android:textColor="#2C3239"
+                android:textSize="@dimen/f_36"
+                android:paddingLeft="@dimen/dimen_90px"
+                android:paddingRight="@dimen/dimen_90px"
+                android:paddingTop="@dimen/dimen_30px"
+                android:paddingBottom="@dimen/dimen_30px"
+                android:background="#FFFFFF"
+                android:layout_marginTop="@dimen/dimen_2px"
+                android:layout_marginBottom="@dimen/dimen_2px"/>
+            <RadioButton
+                android:id="@+id/pop_sex_rb_secret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@drawable/selector_item_sex"
+                android:text="保密"
+                android:textColor="#2C3239"
+                android:textSize="@dimen/f_36"
+                android:paddingLeft="@dimen/dimen_90px"
+                android:paddingRight="@dimen/dimen_90px"
+                android:paddingTop="@dimen/dimen_30px"
+                android:paddingBottom="@dimen/dimen_30px"
+                android:background="#FFFFFF"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_32px"
+            android:background="@drawable/shape_rec_radius_5dp_fff"/>
+    </LinearLayout>
+
+</RelativeLayout>

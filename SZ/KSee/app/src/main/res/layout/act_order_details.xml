@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_base_background"
+    android:orientation="vertical">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        app:background="@color/white"
+        app:center_title_text_style="@style/text_36_c_gray_242e42"
+        app:left_first_image="@drawable/icon_live_back"
+        app:left_first_visibility="visible"
+        app:left_second_text="返回"
+        app:title="订单详情"
+        app:title_style="normal_img" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.junhsue.ksee.view.OrderStatusView
+                android:id="@+id/order_status_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/txt_order_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100px"
+                android:background="@color/page_base_background"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding"
+                android:text="订单号:"
+                android:textColor="@color/c_gray_8392a0"
+                android:textSize="@dimen/common_font_size_normal" />
+
+
+            <com.junhsue.ksee.view.OrderAddressView
+                android:id="@+id/order_address_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hint_visible="false"
+                app:item_click="false" />
+
+            <com.junhsue.ksee.view.OrderInfoView
+                android:id="@+id/order_info_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20px"
+                app:goods_number_operation_visible="false"
+                app:goods_number_small_visible="true" />
+
+            <TextView
+                android:id="@+id/txt_order_create_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20px"
+                android:background="@color/page_base_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_padding"
+                android:text="创建时间"
+                android:textColor="@color/c_gray_8392a0"
+                android:textSize="@dimen/common_font_size_normal" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_pay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/c_yellow_cdac8d"
+            android:text="立即支付"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_font_size_normal" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_confirm"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="份数"
+                android:textColor="@color/c_black_3c4350"
+                android:textSize="@dimen/commmon_font_size_small" />
+
+            <TextView
+                android:id="@+id/txt_price_quantity_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="实付:"
+                android:textSize="@dimen/common_font_size_normal" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

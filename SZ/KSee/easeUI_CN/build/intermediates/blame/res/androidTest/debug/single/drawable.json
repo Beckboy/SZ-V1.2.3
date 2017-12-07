@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_sidebar_background_pressed.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_sidebar_background_pressed.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_edit_text_bg.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_edit_text_bg.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_btn_blue_normal_shape.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_btn_blue_normal_shape.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_btn_cancel_bj.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_btn_cancel_bj.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/selector_btn_head_back.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/selector_btn_head_back.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/selector_groupchat_keyboard.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/selector_groupchat_keyboard.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_recording_text_hint_bg.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_recording_text_hint_bg.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_chat_takepic_selector.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_chat_takepic_selector.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_btn_cancel_normal_shape.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_btn_cancel_normal_shape.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_btn_blue_selector.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_btn_blue_selector.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_msg_state_failed_resend.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_msg_state_failed_resend.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_chatfrom_bg.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_chatfrom_bg.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/selector_groupchat_face.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/selector_groupchat_face.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_timestampe_bg.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_timestampe_bg.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_btn_blue_pressed_shape.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_btn_blue_pressed_shape.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/selector_bg_groupchat_detail_info.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/selector_bg_groupchat_detail_info.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/selector_itemlongclick.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/selector_itemlongclick.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/voice_from_icon.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/voice_from_icon.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_chat_send_btn_selector.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_chat_send_btn_selector.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_type_select_btn.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_type_select_btn.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_chatting_setmode_keyboard_btn.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_chatting_setmode_keyboard_btn.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/selector_groupchat_photo.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/selector_groupchat_photo.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_search_clear.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_search_clear.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_common_tab_bg.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_common_tab_bg.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_chat_image_selector.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_chat_image_selector.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_chat_location_selector.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_chat_location_selector.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/shape_circle_red.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/shape_circle_red.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/voice_to_icon.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/voice_to_icon.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/shape_rec_radius_5dp_fff.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/shape_rec_radius_5dp_fff.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_mm_listitem_grey.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_mm_listitem_grey.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_recording_hint_bg.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_recording_hint_bg.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_chat_press_speak_btn.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_chat_press_speak_btn.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_btn_cancel_pressed_shape.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_btn_cancel_pressed_shape.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_chatting_setmode_voice_btn.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_chatting_setmode_voice_btn.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_chatto_bg.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_chatto_bg.xml"
+    },
+    {
+        "merged": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/res/merged/androidTest/debug/drawable/ease_mm_listitem.xml",
+        "source": "/Users/hunter_J/Desktop/JUNHSUE/SZ/KSee/easeUI_CN/build/intermediates/bundles/debug/res/drawable/ease_mm_listitem.xml"
+    }
+]

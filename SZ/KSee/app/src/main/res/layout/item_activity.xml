@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/page_base_background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_content_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_content_link"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_activites_img_layer" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/dimen_15px"
+            android:text="《》"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_font_size_x" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/common_padding">
+
+        <TextView
+            android:id="@+id/txt_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="w"
+            android:textColor="@color/c_gray_666666"
+            android:textSize="@dimen/common_font_size_normal" />
+
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txt_end_date"
+            android:layout_below="@id/txt_end_date"
+            android:layout_marginTop="@dimen/dimen_16px"
+            android:text="地点"
+            android:textColor="@color/c_gray_666666"
+            android:textSize="@dimen/common_font_size_normal" />
+
+
+        <TextView
+            android:id="@+id/txt_activities_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txt_address"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_activites_type"
+            android:gravity="center"
+            android:text="线下"
+            android:textColor="@color/c_gray_c7cdd5"
+            android:textSize="@dimen/common_font_size_small_x" />
+
+    </RelativeLayout>
+
+
+    <!--  <RelativeLayout
+          android:id="@+id/rl_activity_approval"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/ll_activity_content_bottom"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="@dimen/dimen_lose_50px"
+          android:padding="@dimen/dimen_20px"
+          android:visibility="gone">
+
+          <ImageView
+              android:id="@+id/iv_favorite"
+              android:layout_width="@dimen/dimen_60px"
+              android:layout_height="@dimen/dimen_60px"
+              android:layout_centerInParent="true" />
+      </RelativeLayout>
+  -->
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_34px"
+        android:layout_marginTop="@dimen/dimen_40px"
+        android:paddingLeft="@dimen/dimen_40px"
+        android:paddingRight="@dimen/dimen_40px">
+
+        <com.junhsue.ksee.view.CircleImageView
+            android:id="@+id/civ_post_comment_user_avatar"
+            android:layout_width="@dimen/dimen_80px"
+            android:layout_height="@dimen/dimen_80px"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_30px"
+            android:layout_toRightOf="@+id/civ_post_comment_user_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_post_comment_user_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_black_55626e"
+                android:textSize="@dimen/f_28" />
+            <TextView
+                android:id="@+id/tv_post_comment_publish_time"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/dimen_10px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4px"
+                android:textColor="@color/c_gray_aebdcd"
+                android:textSize="@dimen/f_24" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

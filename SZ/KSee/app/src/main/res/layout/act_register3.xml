@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_register3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    tools:context="com.junhsue.ksee.Register3Activity">
+
+    <LinearLayout
+        android:id="@+id/ll_register3_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/component_register3_actionbar"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_register3_line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register_03"
+        android:layout_below="@+id/ll_register3_actionbar"
+        android:layout_marginTop="@dimen/dimen_30px"
+        android:layout_marginBottom="@dimen/dimen_40px"/>
+
+    <EditText
+        android:id="@+id/edit_register3_school"
+        android:layout_width="match_parent"
+        android:hint="你的机构/学校"
+        android:layout_marginTop="@dimen/dimen_20px"
+        android:layout_marginLeft="@dimen/dimen_40px"
+        android:layout_below="@+id/img_register3_line3"
+        style="@style/edit_40_CCCCCC"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/v_register3_line3"
+        style="@style/line_2_90_E2D7CC"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dimen_40px"
+        android:layout_marginRight="@dimen/dimen_40px"
+        android:layout_below="@+id/edit_register3_school"/>
+
+    <TextView
+        android:id="@+id/tv_register3_domain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#CCCCCC"
+        android:layout_marginTop="@dimen/dimen_40px"
+        android:layout_marginLeft="@dimen/dimen_40px"
+        android:layout_below="@+id/v_register3_line3"/>
+
+    <com.junhsue.ksee.view.FlowLayout
+        android:id="@+id/flowlayout_register3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dimen_30px"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:layout_marginTop="@dimen/dimen_30px"
+        android:layout_below="@+id/tv_register3_domain">
+    </com.junhsue.ksee.view.FlowLayout>
+
+    <TextView
+        android:id="@+id/tv_register3_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_88px"
+        android:text="完成"
+        android:textSize="@dimen/f_36"
+        android:textColor="#F5F5F5"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:background="@drawable/register1_nextstep"
+        android:layout_marginRight="@dimen/dimen_50px"
+        android:layout_marginLeft="@dimen/dimen_50px"
+        android:layout_marginBottom="@dimen/dimen_100px"/>
+
+</RelativeLayout>

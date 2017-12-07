@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_indicator_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdgeLength="@dimen/dimen_10px"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:id="@+id/ll_dot_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="horizontal" />
+
+</merge>

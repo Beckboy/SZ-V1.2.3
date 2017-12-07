@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.junhsue.ksee.view.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/white"
+        app:left_first_image="@drawable/icon_live_back"
+        app:left_first_visibility="visible"
+        app:left_second_text_color="@color/c_gray_242E42"
+        app:title="系统通知" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_20px"
+        android:layout_below="@+id/ab_receive_reply_list"
+        android:background="@drawable/icon_bar_top_shadow" />
+
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_plassic_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none"
+        app:ptr_duration_to_close="200"
+        app:ptr_duration_to_close_header="1000"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_mode="both"
+        app:ptr_pull_to_fresh="false"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_resistance="1.7">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前暂无通知哦~"
+                        android:textColor="@color/c_gray_aebdcd"
+                        android:textSize="@dimen/font_size_15sp" />
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/img_notice_empty" />
+                </LinearLayout>
+
+                <com.junhsue.ksee.view.CommonListView
+                    android:id="@+id/lv_notices"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@color/transent"
+                    android:divider="@null"
+                    android:scrollbars="none" />
+
+                <LinearLayout
+                    android:id="@+id/rl_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="25dp"
+                    android:visibility="gone"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_marginLeft="@dimen/dimen_40px"
+                        android:layout_marginRight="@dimen/dimen_30px"
+                        android:layout_weight="1"
+                        android:background="#D6E3F0" />
+
+                    <TextView
+                        style="@style/text_f_28_aebdcd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="没有更多新的消息" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_height"
+                        android:layout_marginLeft="@dimen/dimen_30px"
+                        android:layout_marginRight="@dimen/dimen_40px"
+                        android:layout_weight="1"
+                        android:background="#D6E3F0" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</LinearLayout>

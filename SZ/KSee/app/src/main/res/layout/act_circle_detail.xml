@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.junhsue.ksee.CircleDetailActivity">
+
+    <com.junhsue.ksee.view.ActionBar
+        xmlns:junhsue="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ab_circle_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        junhsue:background="@color/white"
+        junhsue:center_title_text_style="@style/text_36_c_gray_242e42"
+        junhsue:left_first_image="@drawable/icon_live_back"
+        junhsue:left_first_visibility="visible"
+        junhsue:left_second_visibility="visible"
+        junhsue:title="师范生了没"
+        junhsue:title_style="normal_txt" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_circle_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/ab_circle_detail"
+        android:background="@color/white">
+        <com.junhsue.ksee.view.PostListTabView
+            android:id="@+id/tab_circle_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_circle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_20px"
+        android:background="#F5F5F5"
+        android:layout_below="@+id/rl_circle_detail"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_circle_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/v_circle"/>
+
+    <ImageView
+        android:id="@+id/iv_post"
+        android:layout_width="@dimen/dimen_120px"
+        android:layout_height="@dimen/dimen_120px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_30px"
+        android:layout_marginRight="@dimen/dimen_30px"
+        android:background="@drawable/btn_senfposter"
+        android:scaleType="fitXY" />
+
+
+</RelativeLayout>
